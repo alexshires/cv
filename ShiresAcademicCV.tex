@@ -6,7 +6,7 @@
 \usepackage[paper=a4paper,
             %includefoot, % Uncomment to put page number above margin
             marginparwidth=30.5mm,    % Length of section titles
-            marginparsep=1.5mm,       % Space between titles and text
+            marginparsep=1mm,       % Space between titles and text
             %margin=25mm,              % 25mm margins
             includemp
             ]{geometry}
@@ -57,6 +57,10 @@
   \end{list}
 }
 
+\pltopsep=\medskipamount
+\plitemsep=1pt
+\plparsep=1pt
+
 % %%%%%%%%%%%%%%%%%%%%
 %  for LHCb aliases
 % %%%%%%%%%%%%%%%%%%%%
@@ -100,7 +104,7 @@
 
 
 
-\def\name{Alexander Shires}
+\def\name{Dr Alexander Shires}
 
 \input{lhcb-symbols-def} % Add in the predefined LHCb symbols
 
@@ -117,7 +121,7 @@
 % This also tells LaTeX to preferably break a page on one of these gaps
 % if there is a needed pagebreak nearby.
 \newcommand{\blankline}{\quad\pagebreak[3]}
-\newcommand{\halfblankline}{\quad\vspace{-0.5\baselineskip}\pagebreak[3]}
+\newcommand{\halfblankline}{\quad\vspace{-0.25\baselineskip}\pagebreak[3]}
 
 % Uses hyperref to link DOI
 \newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
@@ -140,10 +144,10 @@
 \bibliographystyle{Alex}
 \centerline{\Large \bf \name}
 
-\section*{Contact Information}
+\section*{\quad}
 
 \begin{minipage}{0.50\linewidth}
-  \href{http://e5.physik.uni-dortmund.de}{Experimentelle Physik 5} \\
+  \href{http://www.e5.physik.uni-dortmund.de}{Experimentelle Physik 5} \\
  % \href{http://wwww.imperial.ac.uk/physics/}{Department of Physics} \\
   \href{http://www.uni-dortmund.de}{TU Dortmund} \\
   Otto-Hahn Strasse \\
@@ -153,30 +157,24 @@
   \begin{tabular}{ll}
     Phone: & +49 173 6909175 \\
     Email: & \email{alexander.shires@cern.ch}\\
-    Homepage: & \href{http://www.hep.ph.ic.ac.uk/~as1905/}{www.hep.ph.ic.ac.uk/\~\ as1905/} \\
+    %Homepage: & \href{http://www.hep.ph.ic.ac.uk/~as1905/}{www.hep.ph.ic.ac.uk/\~\ as1905/} \\
   \end{tabular}
 \end{minipage}
 
 %\section*{Research Interests}
 %High Energy Particle Physics, Flavour Physics, Rare Decays, Electroweak Penguins 
 
-
-
 \section*{Education}
 %
-\href{http://www.imperial.ac.uk/}{\textbf{Imperial College London}},
+\href{http://www.imperial.ac.uk/}{\textbf{Imperial College London, UK}},
 London, UK
 \begin{compactitem}
 \item Ph.D., High Energy Physics , \textit{October 2013}
         \begin{compactitem}
-        \item Thesis topic: \emph{Exploring \bquark \to \squark electroweak penguins at \lhcb}
+        \item Thesis topic: \emph{Exploring $b\rightarrow s$ electroweak penguins at LHCb}
         \item Supervisor:
               \href{http://www3.imperial.ac.uk/people/u.egede}
                    {Prof. Ulrik Egede}
-        %\item Worked a both a sole researcher and as part of a small team 
-        %to produce two major public results. 
-        %Was main point of contact and co-coordinator between the Rare Decays 
-        %working group and the Simulation team in \lhcb for 2012.
         \end{compactitem}
 \item MSci, {Physics with Theoretical Physics}, \textit{October 2009}
         \begin{compactitem}
@@ -185,11 +183,9 @@ London, UK
         \item Supervisor:
               \href{http://www3.imperial.ac.uk/people/c.contaldi}
                    {Dr. Carlo Contaldi}
-
         \end{compactitem}
 \end{compactitem}
-\href{http://www.hardenhuish.wilts.sch.uk/hardenhuish/site/}{\textbf{Hardenhuish School}},
-Chippenham, Wilts, UK
+\href{http://www.hardenhuish.wilts.sch.uk/hardenhuish/site/}{\textbf{Hardenhuish School}}, UK
 \begin{compactitem}
 \item A-levels, August 2005
         \begin{compactitem}
@@ -208,37 +204,38 @@ TU Dortmund, Germany
 \item \textit{Post-doctoral research assistant}%
         \hfill \textbf{June 2013 onwards}
 \begin{compactitem}
-\item Work incorporated the measurement of $R_K$, the measurement of the S-wave contribution in 
-$B^0 \rightarrow K^{*}\mu^{+}\mu^{-}$ and developing the LHCb High Level Trigger.
+\item TODO
+\end{compactitem}
+\end{compactitem}
+
+CERN, Switzerland
+\begin{compactitem}
+\item \textit{PhD student}%
+        \hfill \textbf{Aug 2010 to Dec 2011}
+\begin{compactitem}
+\item Placement at CERN as part of my PhD studentship, lived in Geneva and worked at CERN for 14 months.
+Participated in the running of the \lhcb experiment alongside my research.
 \end{compactitem}
 \end{compactitem}
 
 Imperial College London, UK
 \begin{compactitem}
 \item \textit{Undergraduate research placement}%
-        \hfill \textbf{June - Sept 2008}
+        \hfill \textbf{Summer 2008}
 \begin{compactitem}
 \item Developed and integrated autonomous remote testing for the Ganga project  
 Added reporting options to show test failure differences between different versions.
 \end{compactitem}
 \end{compactitem}
 
-Westinghouse Rail Systems, Chippenham, Wilts, UK
+Westinghouse Rail Systems, Chippenham, UK
 \begin{compactitem}
-\item \textit{Junior Engineer}%
-        \hfill \textbf{June - Sept 2006, June - Sept 2007}
+\item \textit{Junior engineer}%
+        \hfill \textbf{Summer 2006, Summer 2007}
 \begin{compactitem}
-\item Worked as the sole data analyst for the first live railway trial of a multi-million pound project. Developed software to test the integration of a new railway track-side communications protocol. % for a rigorous fail-safe environment. Simulated 'man-in-the-middle' style disruptions using a hardware interface to a serial link.
-%This involved coding at both the hardware and user interface level in C++ and%Added user-interface configurable to the Westinghouse front-line railway control product. 
-%Specified and carried out thorough tests on track-side communications software
+\item As a scholarship placement, worked as the sole data analyst for the first live railway trial of a multi-million pound project. 
+Invited back to develop software to test the integration of a new railway track-side communications protocol. 
 \end{compactitem}
-%\item \textit{Scholarship placement}%
-%        \hfill \textbf{July 2006 to September 2006}
-%\begin{compactitem}
-%\%item 
-%Gained experience problem solving and reporting results at several managerial levels. 
-%Designed and developed VB6 analysisprograms for Access databases through SQL.
-%\end{compactitem}
 \end{compactitem}
 
 
@@ -252,7 +249,7 @@ Westinghouse Rail Systems, Chippenham, Wilts, UK
 \item \bibentry{LHCb-PAPER-2011-020}
 \item Additional author on 155 papers as a member of the LHCb collaboration.
 \end{compactitem}	
-\section*{Invited Talks} 
+\section*{Invited talks} 
 \begin{compactitem}
 \item \bibentry{Shires:DortmundTalk2}
 \item \bibentry{Shires:AspenTalk}
@@ -261,15 +258,14 @@ Westinghouse Rail Systems, Chippenham, Wilts, UK
 \item \bibentry{Shires:1459485}
 \item \bibentry{ShiresIOP}
 \end{compactitem}
-%\setlength{\extrarowheight}{5pt}
 
-\section*{Teaching Experience}
+\section*{Teaching experience}
 \begin{tabular}{ll}
-    2014 & $4^{\text{th}}$\yr project supervision, TU Dortmund. \\
-    2014 & $3^{\text{rd}}$\yr project supervision, TU Dortmund. \\
-    2014 & PID Lecture, $4^{\text{th}}$\yr particle detectors lecture course, TU Dortmund \\
-    2012 & $3^{\text{rd}}$\yr Computational Physics Lab Demonstrator, Imperial College London. \\
-    2011 & $3^{\text{rd}}$\yr Laboratory Demonstrator, Imperial College London.
+    2014 & Project supervision, $4^{\text{th}}$ year undergraduate course, TU Dortmund. \\
+    2014 & Project supervision, $3^{\text{rd}}$ year undergraduate course, TU Dortmund. \\
+    2014 & Particle identification seminar, part of the $4^{\text{th}}$ year particle detectors lecture course, TU Dortmund. \\
+    2012 & Computational lab demonstrator, $3^{\text{rd}}$ year undergradudate course, Imperial College London. \\
+    2011 & Experimental lab demonstrator, $3^{\text{rd}}$ year undergraduate couse, Imperial College London.
 \end{tabular}
 
 \section*{Skills}
@@ -278,34 +274,6 @@ Westinghouse Rail Systems, Chippenham, Wilts, UK
     \item Windows (XP, 7), Linux ( Ubuntu, Scientific Linux )
     \item Full, clean, UK Driving licence (2004).
 \end{compactitem}
-
-\section*{Awards}
-\begin{compactitem}
-\item STFC PhD Studentship, 2009
-\item Westinghouse Rail Systems Centenary Scholarship, 2005
-\item RJ Alderman Award for Maths (Hardenhuish School, 2005)
-\end{compactitem}
-
-\section*{References available on request}
-%
-%\begin{minipage}{0.48\linewidth}
-%\href{http://www3.imperial.ac.uk/people/u.egede}{\textbf{Dr. Ulrik. Egede}}
-%\begin{compactitem}
-%    \item Professor, \\
-%        \href{http://www.imperial.ac.uk/highenergyphysics}{High Energy Physics}, \\
-%        \href{http://www.imperial.ac.uk/}{Imperial College London} \\
-%    Prince Consort Road, London, SW7 2AZ
-%\end{compactitem}
-%\end{minipage}
-%\begin{minipage}{0.48\linewidth}
-%\href{http://www3.imperial.ac.uk/people/c.contaldi}{\textbf{Dr. Carlo. Contaldi}}
-%\begin{compactitem}
-%    \item Reader, \\
-%        \href{http://www3.imperial.ac.uk/theoreticalphysics}{Theoretical Physics}, \\
-%        \href{http://www.imperial.ac.uk/}{Imperial College London} \\
-%    Prince Consort Road, London, SW7 2AZ 
-%\end{compactitem}
-%\end{minipage}
 
 \nobibliography{cv,LHCb-PAPER,LHCb-CONF}
 
