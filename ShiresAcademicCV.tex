@@ -1,0 +1,313 @@
+	% Don't like 10pt? Try 11pt or 12pt
+\documentclass[10pt]{article}
+
+
+%% Use these lines for A4-sized paper
+\usepackage[paper=a4paper,
+            %includefoot, % Uncomment to put page number above margin
+            marginparwidth=30.5mm,    % Length of section titles
+            marginparsep=1.5mm,       % Space between titles and text
+            margin=25mm,              % 25mm margins
+            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+%% This gives us fun enumeration environments. compactitem will be nice.
+\usepackage{paralist}
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+
+% Layout: Puts the section titles on left side of page
+\reversemarginpar
+
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%                    \arabic{page}                               % -LP
+                    \hfill \,}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\usepackage{hyperref}    % Hyperlinks in references
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+
+% Make lists without bullets
+\renewenvironment{compactitem}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+% %%%%%%%%%%%%%%%%%%%%
+%  for LHCb aliases
+% %%%%%%%%%%%%%%%%%%%%
+\usepackage{ifthen} % for conditional statements
+
+% %%%%%%% CHOOSE --------
+\newboolean{pdflatex}
+%\setboolean{pdflatex}{false} % use this if using eps figures
+\setboolean{pdflatex}{true} % use this if using non-eps figures
+%
+%   depending on your choice may also have to edit Makefile if using make
+% %%%%%%%%%%%%% ---------
+\newboolean{articletitles}
+\setboolean{articletitles}{true} % False removes titles in references
+
+\newboolean{uprightparticles}
+\setboolean{uprightparticles}{false} %Set to true to get roman particle symbols
+\usepackage{amsmath} % Adds a large collection of math symbols
+\usepackage{xspace} % To avoid problems with missing or double spaces after
+                    % predefined symbold
+\usepackage{bm}
+
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{upgreek} % Adds in support for greek letters in roman typeset
+
+% Get hyperlinks to captions and in references.
+% These do not work with revtex. Use "hypertext" as class option instead.
+\usepackage[all]{hypcap} % Internal hyperlinks to floats.
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\large}
+%\subsectionfont{\scshape\mdseries\itshape\normal}
+%\renewcommand{\section}[2]%
+%        {\pagebreak[3]\vspace{1.3\baselineskip}%
+%         \phantomsection\addcontentsline{toc}{section}{#1}%
+%         \hspace{0in}%
+%         \marginpar{
+%         \raggedright \scshape #1}#2}
+
+
+
+
+\def\name{Alexander Shires}
+
+\input{lhcb-symbols-def} % Add in the predefined LHCb symbols
+
+\usepackage{natbib}
+\usepackage{bibentry}
+%\makeatletter\let\saved@bibitem\@bibitem\makeatother
+\usepackage{cite}
+%\usepackage{mciteplus}
+
+
+\nobibliography*
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[3]}
+\newcommand{\halfblankline}{\quad\vspace{-0.5\baselineskip}\pagebreak[3]}
+
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+% For \url{SOME_URL}, links SOME_URL to the url SOME_URL
+\providecommand*\url[1]{\href{#1}{#1}}
+% Same as above, but pretty-prints SOME_URL in teletype fixed-width font
+\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+% Same as above, but pretty-prints ADDRESS in teletype fixed-width font
+\renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\bibliographystyle{Alex}
+\centerline{\Large \bf \name}
+
+\section*{Contact Information}
+
+\begin{minipage}{0.50\linewidth}
+  \href{http://e5.physik.uni-dortmund.de}{Experimentelle Physik 5} \\
+ % \href{http://wwww.imperial.ac.uk/physics/}{Department of Physics} \\
+  \href{http://www.uni-dortmund.de}{TU Dortmund} \\
+  Otto-Hahn Strasse \\
+  44227 Dortmund 
+\end{minipage}
+\begin{minipage}{0.50\linewidth}
+  \begin{tabular}{ll}
+    Phone: & +49 173 6909175 \\
+    Email: & \email{alexander.shires@cern.ch}\\
+    Homepage: & \href{http://www.hep.ph.ic.ac.uk/~as1905/}{www.hep.ph.ic.ac.uk/\~\ as1905/} \\
+  \end{tabular}
+\end{minipage}
+
+%\section*{Research Interests}
+%High Energy Particle Physics, Flavour Physics, Rare Decays, Electroweak Penguins 
+
+
+
+\section*{Education}
+%
+\href{http://www.imperial.ac.uk/}{\textbf{Imperial College London}},
+London, UK
+\begin{compactitem}
+\item Ph.D., High Energy Physics , \textit{October 2013}
+        \begin{compactitem}
+        \item Thesis topic: \emph{Exploring \bquark \to \squark electroweak penguins at \lhcb}
+        \item Supervisor:
+              \href{http://www3.imperial.ac.uk/people/u.egede}
+                   {Prof. Ulrik Egede}
+        %\item Worked a both a sole researcher and as part of a small team 
+        %to produce two major public results. 
+        %Was main point of contact and co-coordinator between the Rare Decays 
+        %working group and the Simulation team in \lhcb for 2012.
+        \end{compactitem}
+\item MSci, {Physics with Theoretical Physics}, \textit{October 2009}
+        \begin{compactitem}
+        \item First Class degree
+        \item Masters project: \emph{Topological Measures of the Cosmic Microwave Background}
+        \item Supervisor:
+              \href{http://www3.imperial.ac.uk/people/c.contaldi}
+                   {Dr. Carlo Contaldi}
+
+        \end{compactitem}
+\end{compactitem}
+\href{http://www.hardenhuish.wilts.sch.uk/hardenhuish/site/}{\textbf{Hardenhuish School}},
+Chippenham, Wilts, UK
+\begin{compactitem}
+\item A-levels, August 2005
+        \begin{compactitem}
+        \item Physics (A), Maths (A), Further Maths(A), Chemistry(A)
+        \end{compactitem}
+\item GCSEs, August 2003
+        \begin{compactitem}
+        \item 3 A$^{*}$, 3 A, 3 B.
+        \end{compactitem}
+\end{compactitem}
+%\setlength{\extrarowheight}{10pt}
+
+\section*{Professional Experience}
+TU Dortmund, Germany
+\begin{compactitem}
+\item \textit{Post-doctoral research assistant}%
+        \hfill \textbf{June 2013 onwards}
+\begin{compactitem}
+\item Work incorporated the measurement of $R_K$, the measurement of the S-wave contribution in 
+$B^0 \rightarrow K^{*}\mu^{+}\mu^{-}$ and developing the LHCb High Level Trigger.
+\end{compactitem}
+\end{compactitem}
+
+Imperial College London, London
+\begin{compactitem}
+\item \textit{Undergraduate research placement}%
+        \hfill \textbf{June 2008 to September 2008}
+\begin{compactitem}
+\item Developed and integrated autonomous remote testing for the Ganga project  
+Added reporting options to show test failure differences between different versions.
+\end{compactitem}
+\end{compactitem}
+
+Westinghouse Rail Systems, Chippenham, Wilts, UK
+\begin{compactitem}
+\item \textit{Junior Engineer}%
+        \hfill \textbf{June 2007 to September 2007}
+\begin{compactitem}
+\item Developed software to test the integration of a new railway track-side communications protocol for a rigorous fail-safe environment.
+ Simulated 'man-in-the-middle' style disruptions using a hardware interface to a serial link.
+%This involved coding at both the hardware and user interface level in C++ and%Added user-interface configurable to the Westinghouse front-line railway control product. 
+%Specified and carried out thorough tests on track-side communications software
+\end{compactitem}
+\item \textit{Scholarship placement}%
+        \hfill \textbf{July 2006 to September 2006}
+\begin{compactitem}
+\item Worked as the sole data analyst for the first live railway trial of a multi-million pound project. 
+Gained experience problem solving and reporting results at several managerial levels. 
+%Designed and developed VB6 analysisprograms for Access databases through SQL.
+\end{compactitem}
+\end{compactitem}
+
+
+\section*{Publications and selected results} 
+% S-wave paper
+\begin{compactitem}
+\item \bibentry{Das:2014sra}
+\item \bibentry{LHCb-PAPER-2014-024}
+\item \bibentry{Blake:2012mb}
+\item \bibentry{LHCb-PAPER-2013-019}
+%\item \bibentry{LHCb-CONF-2012-008}
+\item \bibentry{LHCb-PAPER-2011-020}
+\item Additional author on 165 papers as a member of the LHCb collaboration.
+\end{compactitem}
+\section*{Conference Talks} 
+\begin{compactitem}
+\item \bibentry{Shires:AspenTalk}
+\item \bibentry{Shires:BonnTalk}
+\item \bibentry{Shires:DortmundTalk}
+\item \bibentry{Shires:1459485}
+\item \bibentry{ShiresIOP}
+\end{compactitem}
+%\setlength{\extrarowheight}{5pt}
+
+\section*{Teaching Experience}
+\begin{tabular}{ll}
+    2014 & $4^{\text{th}}$\yr Project supervision, TU Dortmund. \\
+    2014 & PID Lecture, $4^{\text{th}}$\yr particle detectors lecture course, TU Dortmund \\
+    2012 & $3^{\text{rd}}$\yr Computational Physics Lab Demonstrator, Imperial College London. \\
+    2011 & $3^{\text{rd}}$\yr Laboratory Demonstrator, Imperial College London.
+\end{tabular}
+
+\section*{Skills}
+\begin{compactitem}
+    \item \cpp, \python, \fortran, SVN, Git, MS Office, \LaTeX, Vim
+    \item Windows (XP, 7), Linux ( Ubuntu, Scientific Linux )
+    \item Full, clean, UK Driving licence (2004).
+\end{compactitem}
+
+\section*{Awards}
+\begin{compactitem}
+\item STFC PhD Studentship, 2009
+\item Westinghouse Rail Systems Centenary Scholarship, 2005
+\item RJ Alderman Award for Maths (Hardenhuish School, 2005)
+%\item ABRSM Tenor Trombone Grade 8 (2005), Piano Grade 5 (2002)
+\end{compactitem}
+
+\section*{Interests}
+Keen amateur trombonist, I have played in the Groove Big Band (Dortmund), Imperial College Alumni Big Band (London), Orchestra St Pierre Fusterie (Geneva), the Imperial College Sinfonietta, the Imperial College Big Band, and Wiltshire County Youth Orchestra. I have played regular cricket with the Battersea Badgers team in SW London.
+
+%\section*{References available on request}
+%
+%\begin{minipage}{0.48\linewidth}
+%\href{http://www3.imperial.ac.uk/people/u.egede}{\textbf{Dr. Ulrik. Egede}}
+%\begin{compactitem}
+%    \item Professor, \\
+%        \href{http://www.imperial.ac.uk/highenergyphysics}{High Energy Physics}, \\
+%        \href{http://www.imperial.ac.uk/}{Imperial College London} \\
+%    Prince Consort Road, London, SW7 2AZ
+%\end{compactitem}
+%\end{minipage}
+%\begin{minipage}{0.48\linewidth}
+%\href{http://www3.imperial.ac.uk/people/c.contaldi}{\textbf{Dr. Carlo. Contaldi}}
+%\begin{compactitem}
+%    \item Reader, \\
+%        \href{http://www3.imperial.ac.uk/theoreticalphysics}{Theoretical Physics}, \\
+%        \href{http://www.imperial.ac.uk/}{Imperial College London} \\
+%    Prince Consort Road, London, SW7 2AZ 
+%\end{compactitem}
+%\end{minipage}
+
+\nobibliography{cv,LHCb-PAPER,LHCb-CONF}
+
+\end{document}
