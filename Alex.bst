@@ -42,6 +42,7 @@ ENTRY
     eprint
     report
     collaboration
+    conf
   }
   {}
   { label }
@@ -1127,6 +1128,21 @@ FUNCTION {lhcbreport}
   fin.entry
 }
 
+FUNCTION {cvtalk}
+{ output.bibitem
+  format.title "title" output.check
+  blank.sep
+  note output
+  institution "institution" output.check
+  address output
+  format.date "year" output.check
+  new.block
+
+  format.DOI output
+  fin.entry
+}
+
+
 FUNCTION {unpublished}
 { output.bibitem
   format.collaboration output
@@ -1134,7 +1150,7 @@ FUNCTION {unpublished}
   format.title "title" output.check
   blank.sep
   note "note" output.check
-  format.date output
+  format.date output.check
   fin.entry
 }
 
