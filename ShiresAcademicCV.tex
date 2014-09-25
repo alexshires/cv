@@ -137,7 +137,7 @@
 % Same as above, but pretty-prints ADDRESS in teletype fixed-width font
 \renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
 
-
+\pagestyle{empty}
 
 
 
@@ -146,7 +146,8 @@
 \begin{document}
 \centerline{\Large \bf \name}
 \bibliographystyle{Alex}
-\section*{\quad}
+\vspace{0.25cm}
+%\section*{\quad}
 
 \begin{minipage}{0.50\linewidth}
   \href{http://www.e5.physik.uni-dortmund.de}{Experimentelle Physik 5} \\
@@ -168,27 +169,27 @@
 
 \section*{Education}
 %
-\href{http://www.imperial.ac.uk/}{\textbf{\icl}}, UK
+\href{http://www.imperial.ac.uk/}{\text{\icl}}, UK
 \begin{compactitem}
-\item Ph.D., High Energy Physics , \textit{October 2013}
+\item \textbf{Ph.D., High Energy Physics} , \textit{October 2013}
         \begin{compactitem}
         \item Thesis title: \emph{Exploring $b\rightarrow s$ electroweak penguins at LHCb}
         \item Supervisor: \href{http://www3.imperial.ac.uk/people/u.egede}{Prof. Ulrik Egede}
         \end{compactitem}
-\item MSci (Hons), {Physics with Theoretical Physics}, \textit{October 2009}
+\item \textbf{MSci (Hons), {Physics with Theoretical Physics}}, \textit{October 2009}
         \begin{compactitem}
         \item First Class honours degree.
         \item Masters: \emph{Topological Measures of the Cosmic Microwave Background}
         \item Supervisor:  \href{http://www3.imperial.ac.uk/people/c.contaldi}{Dr. Carlo Contaldi}
         \end{compactitem}
 \end{compactitem}
-\href{http://www.hardenhuish.wilts.sch.uk/hardenhuish/site/}{\textbf{Hardenhuish School}}, Wiltshire, UK
+\href{http://www.hardenhuish.wilts.sch.uk/hardenhuish/site/}{\text{Hardenhuish School}}, Wiltshire, UK
 \begin{compactitem}
-\item A-Levels, \textit{August 2005}
+\item \textbf{A-Levels}, \textit{August 2005}
         \begin{compactitem}
         \item Physics (A), Maths (A), Further Maths (A), Chemistry (A)
         \end{compactitem}
-\item GCSEs, \textit{August 2003}
+\item \textbf{GCSEs}, \textit{August 2003}
         \begin{compactitem}
         \item 3 A$^{*}$, 3 A, 3 B
         \end{compactitem}
@@ -196,40 +197,46 @@
 %\setlength{\extrarowheight}{10pt}
 
 \section*{Professional Experience}
-\tud, Germany
+
+\textbf{Post-doctoral research associate}
 \begin{compactitem}
-\item \textit{Post-doctoral research assistant}%
-        \hfill \textbf{June 2013 to present}
+\item {\tud, Germany}  \hfill \textit{June 2013 to present}
 \begin{compactitem}
-\item TODO
-Second placement at \cern to work on the \lhcb trigger system. 
+\item Post-doctoral position in the Emmy N\"other group headed by Johannes Albrecht. % at \tud. 
+Worked on experimental measurements of \btosll decays and phenomological projects whilst supervising MSc and BSc students.
+Placement at \cern for three months to work on the \lhcb trigger system.
+Currently extending previous measurements of \btosll decays and measuring \btodll decays.
 \end{compactitem}
 \end{compactitem}
 
-\cern, Switzerland
+\textbf{PhD student}
 \begin{compactitem}
-\item \textit{PhD student}%
-        \hfill \textbf{Aug 2010 to Dec 2011}
+\item \icl, UK    \hfill \textit{Jan 2012 to Apr 2013}
 \begin{compactitem}
-\item First placement as part of my PhD studentship, lived in Geneva and worked at CERN for 14 months.
-Participated in the running of the \lhcb experiment alongside my research.
+\item Second part of PhD studentship.
+Worked on the second angular analysis of \BdKstmm, the measurement of the \kpi S-wave in \BdKstmm and .
+Participated in the running of the \lhcb experiment during data-taking in 2011 alongside my research. 
+\end{compactitem}
+\cern, Switzerland   \hfill \textit{Aug 2010 to Dec 2011}
+\begin{compactitem}
+\item Placement as part of my PhD studentship, lived in Geneva and worked at CERN.
+Worked on the first angular analysis of \BdKstmm and developed the trigger for \lhcb.
+Participated in the running of the \lhcb experiment during data-taking in 2011 alongside my research. 
 \end{compactitem}
 \end{compactitem}
 
-\icl, UK
+\textbf{Undergraduate research placement} 
 \begin{compactitem}
-\item \textit{Undergraduate research placement}%
-        \hfill \textbf{Summer 2008}
+\item \icl, UK    \hfill \textit{Summer 2008}
 \begin{compactitem}
 \item Developed and integrated autonomous remote testing for the Ganga project.  
 Added reporting options to show test failure differences between different versions.
 \end{compactitem}
 \end{compactitem}
 
-Westinghouse Rail Systems, Wiltshire, UK
+\textbf{Junior engineer} 
 \begin{compactitem}
-\item \textit{Scholarship placement as a junior engineer}%
-        \hfill \textbf{Summer 2006, Summer 2007}
+\item Westinghouse Rail Systems, Wiltshire, UK   \hfill \textit{Summer 2006, Summer 2007}
 \begin{compactitem}
 \item As a scholarship given to the best 3 students from local schools, worked as the sole data analyst for the first live railway trial of a multi-million pound project. 
 Invited back for a second year to develop software to test the integration of a new railway track-side communications protocol. 
@@ -250,6 +257,7 @@ Invited back for a second year to develop software to test the integration of a 
 \section*{Invited talks} 
 \begin{compactitem}
 \item \bibentry{Shires:DortmundTalk2}
+\item \bibentry{Shires:CERNTalk}
 \item \bibentry{Shires:AspenTalk}
 \item \bibentry{Shires:BonnTalk}
 \item \bibentry{Shires:DortmundTalk}
@@ -257,11 +265,21 @@ Invited back for a second year to develop software to test the integration of a 
 \item \bibentry{ShiresIOP}
 \end{compactitem}
 
+%\begin{tabular}{l}
+% \bibentry{Shires:DortmundTalk2} \\
+% \bibentry{Shires:CERNTalk} \\
+% \bibentry{Shires:AspenTalk} \\
+% \bibentry{Shires:BonnTalk} \\
+% \bibentry{Shires:DortmundTalk} \\
+% \bibentry{Shires:1459485} \\
+% \bibentry{ShiresIOP}  \\
+%\end{tabular}
+
 \section*{Teaching experience}
 \begin{tabular}{ll}
     2014 & Project supervision, $4^{\text{th}}$ year undergraduate course, TU Dortmund. \\
     2014 & Project supervision, $3^{\text{rd}}$ year undergraduate course, TU Dortmund. \\
-    2014 & Particle identification seminar, part of the $4^{\text{th}}$ year particle detectors lecture course, TU  Dortmund. \\
+    2014 & Particle identification seminar, part of the $4^{\text{th}}$ year particle detectors lecture course, TU Dortmund. \\
     2012 & Computational lab demonstrator, $3^{\text{rd}}$ year undergradudate course, Imperial College London. \\
     2011 & Experimental lab demonstrator, $3^{\text{rd}}$ year undergraduate couse, Imperial College London.
 \end{tabular}
@@ -269,7 +287,7 @@ Invited back for a second year to develop software to test the integration of a 
 \section*{Skills}
 \begin{compactitem}
     \item \cpp, \python, \fortran, SVN, Git, MS Office, \LaTeX, Vim
-    \item Windows (XP, 7), Linux ( Ubuntu, Scientific Linux )
+    \item Windows, Linux (Ubuntu, Scientific Linux), OSX
     \item Full, clean, UK Driving licence (2004).
 \end{compactitem}
 

@@ -44,12 +44,6 @@ THINGSHINGS TO PUT IN
 
 capitalisation in job titles
 
-Wilts=wiltshire
-
-
-
-
-
 
 
 * remove refs
