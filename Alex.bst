@@ -1137,7 +1137,6 @@ FUNCTION {cvtalk}
   address output
   format.date "year" output.check
   new.block
-
   format.DOI output
   fin.entry
 }
