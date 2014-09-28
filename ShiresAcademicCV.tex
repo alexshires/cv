@@ -51,16 +51,14 @@
 % Make lists without bullets
 \renewenvironment{compactitem}{
   \begin{list}{}{
-    \setlength{\leftmargin}{1.5em}
+    \setlength{\leftmargin}{1em}
+    \setlength{\pltopsep}{\smallskipamount}
+    \setlength{\plitemsep}{0.1pt}
+\setlength{\plparsep}{0.1pt}
   }
 }{
   \end{list}
 }
-
-\pltopsep=\medskipamount
-\plitemsep=1pt
-\plparsep=1pt
-
 % %%%%%%%%%%%%%%%%%%%%
 %  for LHCb aliases
 % %%%%%%%%%%%%%%%%%%%%
@@ -173,13 +171,13 @@
 \begin{compactitem}
 \item \textbf{Ph.D., High Energy Physics} , \textit{October 2013}
         \begin{compactitem}
-        \item Thesis title: \emph{Exploring $b\rightarrow s$ electroweak penguins at LHCb}
+        \item Thesis title: \href{https://cds.cern.ch/record/1607078?ln=en}{\emph{Exploring $b\rightarrow s$ electroweak penguins at LHCb}}
         \item Supervisor: \href{http://www3.imperial.ac.uk/people/u.egede}{Prof. Ulrik Egede}
         \end{compactitem}
 \item \textbf{MSci (Hons), {Physics with Theoretical Physics}}, \textit{October 2009}
         \begin{compactitem}
-        \item First Class honours degree.
-        \item Masters: \emph{Topological Measures of the Cosmic Microwave Background}
+        \item First Class honours classification.
+        \item Masters: \emph{Topological Measures of the Cosmic Microwave Background}, 
         \item Supervisor:  \href{http://www3.imperial.ac.uk/people/c.contaldi}{Dr. Carlo Contaldi}
         \end{compactitem}
 \end{compactitem}
