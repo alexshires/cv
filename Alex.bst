@@ -303,18 +303,18 @@ FUNCTION {format.authors}
 FUNCTION {format.eprint.newarXivid}
 { eprint #1 #6 substring$ "arXiv:" =
     {"\href{http://arxiv.org/abs/" eprint #7 #9 substring$ * "}" *
-        "{{\tt " * eprint #7 #9 substring$ * "}}" *}
+        "{\texttt{ " * eprint #7 #9 substring$ * "}}" *}
     {"\href{http://arxiv.org/abs/" eprint #1 #9 substring$  * "}" *
-        "{{\tt arXiv:" * eprint #1 #9 substring$ * "}}" *}
+        "{\texttt{ arXiv:" * eprint #1 #9 substring$ * "}}" *}
   if$
 }
 
 FUNCTION {format.eprint.oldarXivid}
 { archive empty$
     {"\href{http://arxiv.org/abs/" eprint * "}" *
-        "{{\tt arXiv:" * eprint * "}}" *}
+        "{\texttt{ arXiv:" * eprint * "}}" *}
     {"\href{http://arxiv.org/abs/" archive *  "/" * eprint * "}" *
-        "{{\tt arXiv:" * archive * "/" * eprint * "}}" *}
+        "{\texttt{ arXiv:" * archive * "/" * eprint * "}}" *}
   if$
 }
 
@@ -393,7 +393,7 @@ FUNCTION {format.editors}
 FUNCTION {format.title}
 { title empty$
     { "" }
-    { "\ifthenelse{\boolean{articletitles}}{{\it " title "t" change.case$ * "}, " *  "}{}" * }
+    { "\ifthenelse{\boolean{articletitles}}{\textit{ " title "t" change.case$ * "}, " *  "}{}" * }
   if$
 }
 
@@ -585,7 +585,7 @@ FUNCTION {format.pages.norange}
 FUNCTION {format.volume}
 { volume empty$
     { "" }
-    { "{\bf " volume * "}" * }
+    { "\textbf{ " volume * "}" * }
   if$
 }
 
