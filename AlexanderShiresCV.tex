@@ -1,0 +1,288 @@
+\documentclass[11pt,a4paper,sans]{moderncv} % possible options include font size
+%('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper',
+%'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual} % style options are 'casual' (default), 'classic', 'oldstyle'
+%and 'banking'
+\moderncvcolor{blue} % color options 'blue' (default), 'orange', 'green', 'red',
+%'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault} % to set the default font; use
+%'\sfdefault' for the default sans serif font, '\rmdefault' for the default roman
+%one, or any tex font name
+\nopagenumbers{} % uncomment to suppress automatic page numbering for CVs longer
+%than one page
+
+% character encoding
+\usepackage[utf8]{inputenc} % if you are not using xelatex ou lualatex, replace by
+%the encoding you are using
+%\usepackage{CJKutf8} % if you need to use CJK to typeset your resume in Chinese,
+%Japanese or Korean
+
+% adjust the page margins
+%\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm}
+\AtBeginDocument{\recomputelengths}
+%\setlength{\hintscolumnwidth}{3cm} % if you want to change the width of the column
+%with the dates
+%\setlength{\makecvtitlenamewidth}{10cm} % for the 'classic' style, if you want to
+%force the width allocated to your name and avoid line breaks. be careful though, the
+%length is normally calculated to avoid any overlap with your personal info; use this
+%at your own typographical risks...
+
+% personal data
+\name{Alexander}{Shires}
+%\title{Alexander Shires' Resume} % optional, remove / comment the line if not
+%wanted
+\address{Ostenhellweg 56}{44135 Dortmund}{Germany}% optional, remove / comment the
+%line if not wanted; the "postcode city" and "country" arguments can be omitted or
+%provided empty
+\phone[mobile]{+49~(173)~690~9175} % optional, remove / comment the line if not
+%wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\phone[fixed]{+44~(7799)~823~210}
+%\phone[fax]{+3~(456)~789~012}
+\email{a.shires@gmail.com} % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com} % optional, remove / comment the line if not wanted
+%\social[linkedin]{alex-shires} % optional, remove / comment the line if not wanted
+\social[twitter]{AlexanderShires} % optional, remove / comment the line if not
+\social[github]{alexshires} % optional, remove / comment the line if not wanted
+%\extrainfo{additional information} % optional, remove / comment the line if not
+%\photo[64pt][0.4pt]{picture} % optional, remove / comment the line if not wanted;
+%'64pt' is the height the picture must be resized to, 0.4pt is the thickness of the
+%frame around it (put it to 0pt for no frame) and 'picture' is the name of the
+%picture file
+%\quote{Some quote} % optional, remove / comment the line if not wanted
+%Publications
+\newcommand{\publication}[3]{\cventry{#1}{#2}{}{}{}{#3}}
+
+\def\tud{Technische Universit\"at Dortmund}
+\def\icl{Imperial College London}
+\def\name{Dr Alexander Shires}
+% %%%%%%%%%%%%%%%%%%%%
+%  for LHCb aliases
+% %%%%%%%%%%%%%%%%%%%%
+\usepackage{ifthen} % for conditional statements
+\newboolean{pdflatex}
+\setboolean{pdflatex}{true} % use this if using non-eps figures
+\newboolean{articletitles}
+\setboolean{articletitles}{true} % False removes titles in references
+\newboolean{uprightparticles}
+\setboolean{uprightparticles}{false} %Set to true to get roman particle symbols
+\usepackage{amsmath} % Adds a large collection of math symbols
+\usepackage{xspace} % To avoid problems with missing or double spaces after
+% predefined symbold
+\usepackage{bm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{upgreek} % Adds in support for greek letters in roman typeset
+\input{lhcb-symbols-def} % Add in the predefined LHCb symbols
+
+% to show numerical labels in the bibliography (default is to show no labels); only
+%useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE
+%ABOVE BY THIS
+%\usepackage{hyperref} % Hyperlinks in referencesor: Environment figure undefined.
+%\usepackage[all]{hypcap}
+% Uses hyperref to link DOI
+%\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+%\newcommand\doi[1]{doi:\doilink{#1}}
+%\usepackage{cite}
+\usepackage{natbib}
+\usepackage{bibentry}
+%\makeatletter\let\saved@bibitem\@bibitem\makeatother
+\usepackage{cite}
+%\usepackage{mciteplus}
+\nobibliography*
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\bibliographystyle{Alex}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace{-1cm}
+
+I am a highly motivated physicist with five years’ experience of contributing to the
+\lhcb collaboration at \cern.
+My research is focussed on searching for physics beyond the standard model in \bsll
+decays.
+
+\section{Education}
+\cventry{Oct 2013}{PhD, High Energy Physics}{\icl}{}{}{
+\href{https://cds.cern.ch/record/1607078?ln=en}{\emph{Exploring $b\rightarrow s$
+electroweak penguins at LHCb}},
+Supervisor: \href{http://www3.imperial.ac.uk/people/u.egede}{Prof. Ulrik Egede} \\
+Research PhD searching for physics beyond the Standard Model on the \lhcb experiment
+at CERN.
+Implemented data analysis code to calculate the acceptance correction, a critical
+requirement for the first two measurements of \BdToKstmm
+Developed trigger software algorithms to select .
+Whilst living in Geneva for 15 months, participated in the running of the \lhcb
+experiment in 2011.
+}  % arguments 3 to 6 can be left empty
+\cventry{Jun 2009}{MSci (Hons), Physics With Theoretical Physics}{\icl}{}{\textit{}}
+{First Class degree concentrating on the theoretical aspects of physics,
+specifically to understand current research into particle physics and cosmology.
+This four year course involved specific courses in applied mathematics, statistics
+and computing dedicated to implementing algorithms for modelling and data analysis.}
+\cventry{Aug 2005}{A-levels, GCSEs}{Hardenhuish School}{Chippenham, Wiltshire, UK}
+{}{A-levels: Physics (A), Mathematics (A), Chemistry (A), Further Mathematics (A). \\
+GCSEs: 3 A*, 3 A, 3 B.}
+
+\section{Skills}
+\cvitem{Key skills}{Physics, Data Analysis, Programming}
+\cvdoubleitem{Computing}{\cpp, \python, \fortran}{Frameworks}{ROOT, boost, gsl,
+numpy/scipy}
+\cvdoubleitem{OS}{Linux, Windows}{Tools}{SVN, Git, MS Office, \LaTeX, Vim}
+\cvdoubleitem{Languages}{English, German}{Additional}{Full, clean UK driving
+licence}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Professional Experience}
+\cventry{2013\\ to present}{Post doctoral researcher}{\tud}{}{}{
+Post-doctoral position as an experimental researcher working on data from the \lhcb
+experiment. % in the Emmy N\"other group headed by Johannes Albrecht. \\
+My first project tested lepton universality, where I developed new models,
+implemented all the calculations in a coherent framework and brought the result to
+publication.
+Alongside this, I initiated a collaboration with the theory department to produce
+supporting research.
+I am currently extending previous measurements of \btosll decays and measuring
+\btodll decays. \\
+Detailed achievements:%
+\begin{itemize}%
+\item Delivered two high quality publications, one experimental and one theoretical
+in the first year.
+\item Subsequent placement at \cern for three months to contribute to the \lhcb
+trigger system.
+\item Supervised MSc and BSc students for their final undergraduate projects.
+\end{itemize}}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line
+%1\newline{}Description line 2}
+
+\cventry{Summer\\ 2008}{Undergraduate research placement}{\icl}{}{}{Developed and
+integrated autonomous remote testing for the Ganga project.
+Added reporting options to show test failure differences between different versions. 
+\begin{itemize}
+\item Worked with established software framework as part of a small team to
+implement the required improvements.
+\end{itemize}
+}
+
+\cventry{Summer \\2006 \& 2007}{Junior engineer}{Westinghouse Rail
+Systems}{Chippenham, Wilts, UK}{}{
+As a scholarship given to the best 3 students from local schools, 
+worked as the sole data analyst for the first live railway trial of a multi-million
+pound project.
+Invited back for a second year to develop software to test the integration of a 
+new railway track-side communications protocol.}
+
+%\section{Languages}
+%\cvitemwithcomment{Language 1}{Skill level}{Comment}
+%\cvitemwithcomment{Language 2}{Skill level}{Comment}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+\clearpage
+%
+%
+\section{Publications}
+\cvitem{}{ \bibentry{Das:2014sra}}
+\cvitem{}{ \bibentry{LHCb-PAPER-2014-024}}
+\cvitem{}{ \bibentry{LHCb-PAPER-2013-019}}
+\cvitem{}{ \bibentry{Blake:2012mb}}
+\cvitem{}{ \bibentry{LHCb-PAPER-2011-020}}
+\cvitem{}{ Additional author on 155 papers as a member of the LHCb collaboration.}
+\section*{Invited talks} 
+\cvitem{}{ \bibentry{Shires:DortmundTalk2}}
+\cvitem{}{ \bibentry{Shires:CERNTalk}}
+\cvitem{}{ \bibentry{Shires:AspenTalk}}
+\cvitem{}{ \bibentry{Shires:BonnTalk}}
+\cvitem{}{ \bibentry{Shires:DortmundTalk}}
+\cvitem{}{ \bibentry{Shires:1459485}}
+\cvitem{}{ \bibentry{ShiresIOP}}
+
+\section*{Teaching experience}
+\cvitem{ 2014 }{ Project supervision, $4^{\text{th}}$ year undergraduate course, TU
+Dortmund. }
+\cvitem{ 2014 }{ Project supervision, $3^{\text{rd}}$ year undergraduate course, TU
+Dortmund. }
+\cvitem{ 2014 }{ Particle identification seminar, part of the $4^{\text{th}}$ year
+particle detectors lecture course, TU Dortmund. }
+\cvitem{ 2012 }{ Computational lab demonstrator, $3^{\text{rd}}$ year undergradudate
+course, Imperial College London. }
+\cvitem{ 2011 }{ Experimental lab demonstrator, $3^{\text{rd}}$ year undergraduate
+couse, Imperial College London.}
+
+
+%\cvitem{hobby 3}{Description}
+%
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans
+%over several lines. Did you notice the indentation when the line wraps?}
+%
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before,
+%this item is particularly long to wrap over several lines.}
+
+\section{References}
+\cvitem{}{Available on request}
+%\begin{cvcolumns}
+% \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person
+% 3\end{itemize}}
+% \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item
+%Person 2\end{itemize}(more upon request)}
+% \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those}
+%also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+% for numerical labels:
+\renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING
+%WITH PREAMBLE PART
+% to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+
+\nobibliography{cv,LHCb-PAPER} % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications} % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications} % 'publications' is the name of a BibTeX file
+
+%\clearpage
+%%-----       letter       ---------------------------------------------------------%% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}} % use an optional argument to use a
+%string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+%\dots
+%\makeletterclosing
+
+%\clearpage\end{CJK*} % if you are typesetting your resume in Chinese using CJK; the
+%\clearpage is required for fancyhdr to work correctly with CJK, though it kills the
+%page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
