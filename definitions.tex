@@ -1,0 +1,323 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% restore from template
+\def\ellell     {\ensuremath{\ell^+ \ell^-}\xspace}
+\def\hlt    {HLT\xspace}
+\def\hltone {HLT1\xspace}
+\def\hlttwo {HLT2\xspace}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Alex\rq{}s stuff
+\def\Kstarzz  {\ensuremath{\kaon^{*0}_{0}}\xspace}
+\def\Kstarzo  {\ensuremath{\kaon^{*0}_{1}}\xspace}
+\def\Kstarzt  {\ensuremath{\kaon^{*0}_{2}}\xspace}
+\def\Kstarzj  {\ensuremath{\kaon^{*0}_{J}}\xspace}
+%% Angular observables
+\def\FL    {\ensuremath{F_{\mathrm{L}}}\xspace}
+\def\FT    {\ensuremath{F_{\mathrm{T}}}\xspace}
+\def\AIm   {\ensuremath{A_{\mathrm{Im}}}\xspace}
+\def\FSl   {\ensuremath{F_{\mathrm{S}}^{l}}\xspace}
+\def\FTl   {\ensuremath{F_{\mathrm{T}}^{l}}\xspace}
+\def\ASl   {\ensuremath{A_{\mathrm{S}}^{l}}\xspace}
+
+\def\OS#1     {\ensuremath{S_{#1}}\xspace}           % 3
+\def\OA#1     {\ensuremath{A_{#1}}\xspace}           % 9
+\def\J#1     {\ensuremath{J_{#1}}\xspace}           % 9
+\def\I#1     {\ensuremath{I_{#1}}\xspace}           % 9
+\def\RJ#1     {\ensuremath{R_{#1}^J}\xspace}           % 9
+\def\RI#1     {\ensuremath{R_{#1}^I}\xspace}           % 9
+
+\def\Ap {\ensuremath{A_{||}}\xspace}
+\def\Ab {\ensuremath{A_{\bot}}\xspace}
+\def\Az {\ensuremath{A_{0}}\xspace}
+
+\def\fs{\ensuremath{f_s}}
+\def\fd{\ensuremath{f_d}}
+%
+\def\kpi                {\ensuremath{K\pi}\xspace}
+
+\def\ktopi               {\ensuremath{K\leftrightarrow\pi}\xspace}
+
+% COMBOS\def\kstmm    {\Kstarz\mumu\xspace}
+\def\kpimm    {\ensuremath{K\pi\mup\mun}\xspace}
+\def\kstll    {\ensuremath{\Kstarz\ellell}\xspace}
+\def\kpill    {\ensuremath{\kpi\ellell}\xspace}
+% MASSES
+\def\mB    {\ensuremath{m_{\Bd}	}\xspace}
+\def\mkpi              {\ensuremath{m_{K\pi}}\xspace}
+\def\mmm              {\ensuremath{m_{\mumu}}\xspace}
+\def\mkstmm    {\ensuremath{m_{\kstmm}}\xspace}
+\def\mkpimm    {\ensuremath{m_{\kpimm}}\xspace}
+\def\mkpill            {\ensuremath{m_{\kpill}}\xspace}
+
+%
+\def\BdToKstll    {\decay{\Bd}{\Kstarz\ellell}}
+\def\BdbToKstbll   {\decay{\Bdb}{\Kstarzb\ellell}}
+\def\BdToKpill    {\decay{\Bd}{\Kp\pim\ellell}}
+\def\BdbToKpill    {\decay{\Bdb}{\Km\pip\ellell}}
+\def\BdToKpimm    {\decay{\Bd}{\Kp\pim\mumu}}
+\def\BdbToKpimm    {\decay{\Bdb}{\Km\pip\mumu}}
+\def\BdToJpsiKpi    {\decay{\Bd}{\jpsi\Kp\pim}}
+\def\BdbToJpsiKpi    {\decay{\Bdb}{\jpsi\Km\pip}}
+\def\BdToJpsiPhi    {\decay{\Bd}{\jpsi\phi}}
+\def\BdToKstzmm    {\decay{\Bd}{\Kstarzz\mumu}}
+\def\BdToKstomm    {\decay{\Bd}{\Kstarzo\mumu}}
+\def\BsToJpsiKpi    {\decay{\Bs}{\jpsi\Kp\pim}}
+%
+
+
+%
+\def\phiacp {\ensuremath{\phi_{\mathrm{ACP}}}\xspace}
+\def\phiprime {\ensuremath{\phi^{'}}\xspace}
+\def\phiprimecp {\ensuremath{\phi^{'}_{\ACP}}\xspace}
+% Observables for S+P+D
+\def\FS    {\ensuremath{F_{\mathrm{S}}}\xspace}
+\def\FSi    {\ensuremath{\mathcal{F}_{\mathrm{S}}}\xspace}
+\def\FP    {\ensuremath{F_{\mathrm{P}}}\xspace}
+\def\FPi   {\ensuremath{\mathcal{F}_{\mathrm{P}}}\xspace}
+\def\FD    {\ensuremath{F_{\mathrm{D}}}\xspace}
+\def\FDi   {\ensuremath{\mathcal{F}_{\mathrm{D}}}\xspace}
+
+
+%normalisations
+\def\NP   {\ensuremath{\mathcal{N}_{\mathrm{1}}}\xspace}
+\def\NS   {\ensuremath{\mathcal{N}_{\mathrm{0}}}\xspace}
+\def\ND   {\ensuremath{\mathcal{N}_{\mathrm{2}}}\xspace}
+
+% combinations
+\def\FSD    {\ensuremath{F_{\mathrm{SD}}}\xspace}
+\def\FSP    {\ensuremath{F_{\mathrm{SP}}}\xspace}
+\def\FPD    {\ensuremath{F_{\mathrm{PD}}}\xspace}
+% longitudinal components
+\def\FLD    {\ensuremath{F_{\mathrm{L}}^{\mathrm{D}}}\xspace}
+\def\FLS    {\ensuremath{F_{\mathrm{L}}^{\mathrm{S}}}\xspace}
+\def\FLP    {\ensuremath{F_{\mathrm{L}}^{\mathrm{P}}}\xspace}
+% transverse components
+\def\FTD    {\ensuremath{F_{\mathrm{T}}^{\mathrm{D}}}\xspace}
+\def\FTP    {\ensuremath{F_{\mathrm{T}}^{\mathrm{P}}}\xspace}
+% asymmetries
+\def\AS    {\ensuremath{A_{\mathrm{S}}}\xspace}
+\def\ASi    {\ensuremath{\mathcal{A}_{\mathrm{S}}}\xspace}
+\def\ASP    {\ensuremath{A_{\mathrm{SP}}}\xspace}
+\def\AD    {\ensuremath{A_{\mathrm{D}}}\xspace}
+\def\ASD    {\ensuremath{A_{\mathrm{SD}}}\xspace}
+\def\ASDi    {\ensuremath{\mathcal{A}_{\mathrm{SD}}}\xspace}
+\def\APD    {\ensuremath{A_{\mathrm{PD}}}\xspace}
+\def\APDi    {\ensuremath{\mathcal{A}_{\mathrm{PD}}}\xspace}
+\def\APDPa    {\ensuremath{A_{\mathrm{PD}}^{\mathrm{T1}}}\xspace}
+\def\APDPb    {\ensuremath{A_{\mathrm{PD}}^{\mathrm{T2}}}\xspace}
+\def\APDL    {\ensuremath{A_{\mathrm{PD}}^{\mathrm{L}}}\xspace}
+\def\APDT    {\ensuremath{A_{\mathrm{PD}}^{\mathrm{T}}}\xspace}
+\def\ADP    {\ensuremath{A_{\mathrm{||}}^{\mathrm{D}}}\xspace}
+\def\ADT    {\ensuremath{A_{\mathrm{\bot}}^{\mathrm{D}}}\xspace}
+\def\AFBD    {\ensuremath{A_{\mathrm{FB}}^{\mathrm{D}}}\xspace}
+\def\AFBO    {\ensuremath{A_{\mathrm{FB}}^{\mathrm{1}}}\xspace}
+\def\AFBT    {\ensuremath{A_{\mathrm{FB}}^{\mathrm{2}}}\xspace}
+
+\def\psq    {\ensuremath{p^2}\xspace}
+
+\def\ctlsq    {\ensuremath{\cos^2{\theta_l}}\xspace}
+\def\ctksq    {\ensuremath{\cos^2{\theta_K}}\xspace}
+\def\stl      {\ensuremath{\sin{\theta_l}}\xspace}
+\def\stk      {\ensuremath{\sin{\theta_K}}\xspace}
+\def\stlsq    {\ensuremath{\sin^2{\theta_l}}\xspace}
+\def\stksq    {\ensuremath{\sin^2{\theta_K}}\xspace}
+
+\def\dctl       {\ensuremath{\mathrm{dcos}{\theta_l}}\xspace}
+\def\dctk       {\ensuremath{\mathrm{dcos}{\theta_K}}\xspace}
+
+
+%decays
+\def\dqsq       {{\deriv q^2}\xspace}
+
+
+\def\BdJpsiKstar  {\decay{\Bd}{\jpsi\Kstarz}}
+\def\BdoJpsiKstar {\decay{\Bdb}{\jpsi\Kstarzb}}
+\def\BdPsiTwoSKstar   {\decay{\Bd}{\Kstarz\psi(2S)}}
+\def\BsPhimm        {\decay{\Bs}{\phi\mumu}}
+\def\BsPhiee        {\decay{\Bs}{\phi\epem}}
+\def\BdKstee          {\decay{\Bd}{\Kstarz\epem}}
+\def\BuKstmm       {\decay{\Bu}{\Kstarp\mumu}}
+\def\LbLmm        {\decay{\Lb}{\Lambdares^{*}(1520)\mumu}}
+\def\BuJpsiKstar  {\decay{\Bu}{\jpsi\Kstarzp}}
+
+\def\BsToJpsiKstar  {\decay{\Bs}{\jpsi\Kstarz}}
+\def\BsKstmm  {\decay{\Bs}{\Kstarz\mumu}}
+
+\def\bdll  {\decay{\bquark}{\dquark\ellell}}
+
+\def\Bupimm        {\decay{\Bu}{\pip\mumu}}
+\def\Bdrhomm        {\decay{\Bd}{\rho\mumu}}
+
+\def\bstt  {\decay{\bquark}{\dquark\tau\tau}}
+\def\BdKsttt  {\decay{\Bs}{\Kstarz\tau\tau}}
+\def\BuKtt  {\decay{\Bu}{\Kp\tau\tau}}
+
+
+
+\def\Kstee          {\Kstarz\epem}
+\def\Kstmm       {\Kstarp\mumu}
+
+\def\varphi    {\ensuremath{\phi}\xspace}
+
+
+\def\gevgevcccc    {\ensuremath{\gev^{2} / c^{4} }\xspace}
+\def\mevmevcccc    {\ensuremath{\mev^{2} / c^{4} }\xspace}
+
+
+
+\def\DLL {\ensuremath{\Delta\log\mathcal{L}}\xspace}
+\def\dll {\ensuremath{\Delta\log\mathcal{L}}\xspace}
+\def\dllmu {\ensuremath{\Delta\log\mathcal{L}_\mu}\xspace}
+\def\dlle {\ensuremath{\Delta\log\mathcal{L}_e}\xspace}
+\def\ismuon {\ensuremath{\text{IsMuon}}\xspace}
+
+
+
+
+
+%RK stuff
+
+
+\def\RK         {\ensuremath{R_{\mathrm{K}}}\xspace}
+
+\def\Kll  {\ensuremath{\Kp\ellell}\xspace}
+\def\Kee  {\ensuremath{\Kp\epem}\xspace}
+\def\Kmm  {\ensuremath{\Kp\mumu}\xspace}
+\def\JpsiKee  {\ensuremath{\jpsi(\epem)\Kp}\xspace}
+\def\JpsiKmm  {\ensuremath{\jpsi(\mumu)\Kp}\xspace}
+\def\Kpipi  {\ensuremath{\Kp\pip\pim}\xspace}
+
+\def\BuJpsiKll  {\decay{\Bu}{\jpsi(\ellell)\Kp}}
+\def\BuKll  {\decay{\Bu}{\Kp\ellell}}
+\def\BuJpsiKmm  {\decay{\Bu}{\jpsi(\mumu)\Kp}}
+\def\BuKmm  {\decay{\Bu}{\Kp\mumu}}
+\def\BuJpsiKee  {\decay{\Bu}{\jpsi(\epem)\Kp}}
+\def\BuKee  {\decay{\Bu}{\Kp\epem}}
+
+\def\BdKll  {\decay{\Bd}{K_1\ellell}}
+\def\BdKmm  {\decay{\Bd}{K_1\mumu}}
+\def\BdKee  {\decay{\Bd}{K_1\epem}}
+
+\def\BuKpipi  {\decay{\Bu}{\Kp\pip\pim}}
+
+\def\BuJpsiKstll  {\decay{\Bu}{\jpsi(\ellell)\Kstarp}}
+\def\BuKstll  {\decay{\Bu}{\Kstarp\ellell}}
+\def\BuJpsiKstmm  {\decay{\Bu}{\jpsi(\mumu)\Kstarp}}
+\def\BuKstmm  {\decay{\Bu}{\Kstarp\mumu}}
+\def\BuJpsiKstee  {\decay{\Bu}{\jpsi(\epem)\Kstarp}}
+\def\BuKstee  {\decay{\Bu}{\Kstarp\epem}}
+
+\def\BdJpsiKstll  {\decay{\Bd}{\jpsi(\ellell)\Kstarz}}
+\def\BdKstll  {\decay{\Bd}{\Kstarz\ellell}}
+\def\BdJpsiKstmm  {\decay{\Bd}{\jpsi(\mumu)\Kstarz}}
+\def\BdKstmm  {\decay{\Bd}{\Kstarz\mumu}}
+\def\BdJpsiKstee  {\decay{\Bd}{\jpsi(\epem)\Kstarz}}
+\def\BdKstee  {\decay{\Bd}{\Kstarz\epem}}
+
+
+\def\BuJpsiXee {\decay{\Bu}{(\decay{\jpsi}{\epem})\Kp X}\xspace}
+\def\BdJpsiXee {\decay{\Bd}{(\decay{\jpsi}{\epem})\Kp X}\xspace}
+\def\BsJpsiXee {\decay{\Bs}{(\decay{\jpsi}{\epem})\Kp X}\xspace}
+\def\LbJpsiXee {\decay{\Lb}{(\decay{\jpsi}{\epem})\Kp X}\xspace}
+
+
+\def\bToccXee {\decay{\bquark}{(\decay{\ccbar}{\epem})\Kp X}\xspace}
+\def\bToJpsiXee {\decay{\bquark}{(\decay{\jpsi}{\epem})\Kp X}\xspace}
+\def\bToXee {\decay{\bquark}{{\epem}\Kp X}\xspace}
+\def\bToccXmm {\decay{\bquark}{(\decay{\ccbar}{\mumu})\Kp X}\xspace}
+\def\bToJpsiXmm {\decay{\bquark}{(\decay{\jpsi}{\mumu})\Kp X}\xspace}
+\def\bToXmm {\decay{\bquark}{{\mumu}\Kp X}\xspace}
+\def\bToccXll {\decay{\bquark}{(\decay{\ccbar}{\ellell})\Kp X}\xspace}
+\def\bToJpsiXll {\decay{\bquark}{(\decay{\jpsi}{\ellell})\Kp X}\xspace}
+\def\bToXmll {\decay{\bquark}{{\ellell}\Kp X}\xspace}
+
+
+\def\Bsemu  {\decay{\Bs}{\mmu\electron}}
+
+\def\mkee {\ensuremath{m_{\Kee}}\xspace}
+\def\mjpsikee {\ensuremath{m_{\JpsiKee}}\xspace}
+
+
+
+
+
+% TRIGGER LINES
+
+\def\lzmuon   {L0Muon\xspace}
+\def\hltotrack    {HLT1Track\xspace}
+\def\hltomuon {HLT1TrackMuon\xspace}
+\def\hlttwotopo {HLT2Topological\xspace}
+\def\mutopo {HLT2MuTopo\xspace}
+\def\muntrack {HLT2MuNTrack\xspace}
+\def\muonetrack {HLT2Mu1Track\xspace}
+\def\mutwotrack {HLT2Mu2Track\xspace}
+\def\muthreetrack {HLT2Mu3Track\xspace}
+
+
+\def\ipchisq {IP \ensuremath{\chi^2}\xspace}
+\def\vtxchisq {vertex \ensuremath{\chi^2}\xspace}
+\def\trchisq {track \ensuremath{\chi^2}\xspace}
+\def\fdchisq {\ensuremath{\mathrm{flight\ distance}\ \chi^2}\xspace}
+
+\def\probnnk {\texttt{ProbNNk}\xspace}
+\def\probnnpi {\texttt{ProbNNpi}\xspace}
+\def\probnnp {\texttt{ProbNNp}\xspace}
+\def\probnne {\texttt{ProbNNe}\xspace}
+
+\def\BtoDmunu {\ensuremath{\decay{\B}{\D\mu\nu}}\xspace}
+\def\BtoDsmunu {\ensuremath{\decay{\B}{\Ds\mu\nu}}\xspace}
+
+\def\kdllkpi     {\ensuremath{\kaon\Delta\log\mathcal{L}_{\kaon\pion}}\xspace}
+\def\pidllkpi     {\ensuremath{\pion\Delta\log\mathcal{L}_{\kaon\pion}}\xspace}
+
+
+\def\minctk  {\ensuremath{\cos{\theta_K^{\mathrm{min}}}}\xspace}
+\def\maxctk  {\ensuremath{\cos{\theta_K^{\mathrm{max}}}}\xspace}
+
+
+
+\def\offsel {\ensuremath{\mathrm{Offline~selected~events}}\xspace}
+\def\genlvl {\ensuremath{\mathrm{Generator~level~events}}\xspace}
+
+\def\CB {\ensuremath{\mathrm{CB}}\xspace}
+\def\Spdf {\ensuremath{\mathrm{S}}\xspace}
+\def\Bpdf {\ensuremath{\mathrm{B}}\xspace}
+
+\def\RK         {\ensuremath{R_{\kaon}}\xspace}
+\def\RH         {\ensuremath{R_{H}}\xspace}
+\def\RP         {\ensuremath{R_{P}}\xspace}
+\def\RV         {\ensuremath{R_{V}}\xspace}
+\def\RKst         {\ensuremath{R_{\Kstar}}\xspace}
+\def\Rphi         {\ensuremath{R_{\phi}}\xspace}
+\def\RXs         {\ensuremath{R_{X_s}}\xspace}
+
+\def\XH         {\ensuremath{\RH/\RK}\xspace}
+\def\XKst         {\ensuremath{R_{\Kstar}/\RK}\xspace}
+\def\Xphi         {\ensuremath{R_{$\phi$}/\RK}\xspace}
+\def\XXs         {\ensuremath{R_{$X_s$}\RK}\xspace}
+
+\def\RPV         {\ensuremath{\RV/\RP}\xspace}
+
+%muon specific
+\def\Cm#1      {\ensuremath{\mathcal{C}_{#1}^{\mu}}\xspace}                       % 9
+\def\Cmp#1     {\ensuremath{\mathcal{C}_{#1}^{' \mu}}\xspace}                    % 7
+\def\Cmeff#1   {\ensuremath{\mathcal{C}_{#1}^{\mathrm{(eff)} \mu}}\xspace}        % 9  
+\def\Cmpeff#1  {\ensuremath{\mathcal{C}_{#1}^{'\mathrm{(eff)} \mu}}\xspace}       % 7
+\def\Ompe#1    {\ensuremath{\mathcal{O}_{#1}^{\mu}}\xspace}                       % 2
+\def\Ompep#1   {\ensuremath{\mathcal{O}_{#1}^{' \mu}}\xspace}                    % 7
+
+\def\Cl#1      {\ensuremath{\mathcal{C}_{#1} (\ell)}\xspace}                       % 9
+\def\Clp#1     {\ensuremath{\mathcal{C}_{#1}^{'}(\ell)}\xspace}                    % 7
+\def\Cleff#1   {\ensuremath{\mathcal{C}_{#1}^{\mathrm{(eff)}}(\ell)}\xspace}        % 9  
+\def\Clpeff#1  {\ensuremath{\mathcal{C}_{#1}^{'\mathrm{(eff)}}(\ell)}\xspace}       % 7
+\def\Olpe#1    {\ensuremath{\mathcal{O}_{#1} (\ell)}\xspace}                       % 2
+\def\Olpep#1   {\ensuremath{\mathcal{O}_{#1}\,^{'}(\ell)}\xspace}                    % 7
+
+%
+%electron specific
+\def\Ce#1      {\ensuremath{\mathcal{C}_{#1}^{e}}\xspace}                       % 9
+\def\Cep#1     {\ensuremath{\mathcal{C}_{#1}^{' e}}\xspace}                    % 7
+\def\Ceeff#1   {\ensuremath{\mathcal{C}_{#1}^{\mathrm{(eff)} e}}\xspace}        % 9  
+\def\Cepeff#1  {\ensuremath{\mathcal{C}_{#1}^{'\mathrm{(eff)} e}}\xspace}       %
+\def\Oepe#1    {\ensuremath{\mathcal{O}_{#1}^{e}}\xspace}                       % 2
+\def\Oepep#1   {\ensuremath{\mathcal{O}_{#1}^{' e}}\xspace}                    % 7
+

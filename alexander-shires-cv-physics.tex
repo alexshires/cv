@@ -16,9 +16,6 @@
 % character encoding
 \usepackage[utf8]{inputenc} % if you are not using xelatex ou lualatex, replace by
 %the encoding you are using
-%\usepackage{CJKutf8} % if you need to use CJK to typeset your resume in Chinese,
-%Japanese or Korean
-
 % adjust the page margins
 %\usepackage[scale=0.75]{geometry}
 \usepackage[scale=0.85]{geometry}
@@ -78,6 +75,7 @@
 \usepackage{amsfonts}
 \usepackage{upgreek} % Adds in support for greek letters in roman typeset
 \input{lhcb-symbols-def} % Add in the predefined LHCb symbols
+\input{definitions}
 
 % to show numerical labels in the bibliography (default is to show no labels); only
 %useful if you make citations in your resume
@@ -115,21 +113,22 @@ I am a highly motivated physicist with five years’ experience of contributing 
 My research is focussed on searching for physics beyond the standard model in \bsll
 decays.
 
+\section{Employment history}
+\cventry{2013\\ to present}{Post doctoral researcher}{\tud}{Germany}{}{\normalsize 
+Post-doctoral position in experimental particle physics as part of the \lhcb collaboration
+experiment in the Emmy N\"other group headed by Johannes Albrecht. 
+}
+
 \section{Education}
-\cventry{Oct 2013}{PhD, High Energy Physics}{\icl}{UK}{}{
+\cventry{Oct 2013}{PhD, High Energy Physics}{\icl}{UK}{}{\normalsize 
 Thesis: \href{https://cds.cern.ch/record/1607078?ln=en}{\emph{Exploring $b\rightarrow s$
 electroweak penguins at LHCb}},
 Supervisor: \href{http://www3.imperial.ac.uk/people/u.egede}{Prof. Ulrik Egede} \\
 Research PhD searching for physics beyond the Standard Model on the \lhcb experiment
 at CERN.
-%Implemented data analysis code to calculate the acceptance correction, a critical
-%requirement for the first two measurements of the \BdToKstmm decay at \lhcb.
-%Developed trigger software algorithms to select .
-%Whilst living in Geneva for 15 months, participated in the running of the \lhcb
-%experiment in 2011.
-}  % arguments 3 to 6 can be left empty
+}
 \cventry{Jun 2009}{MSci (Hons), Physics With Theoretical Physics}{\icl}{UK}{}
-{First Class degree concentrating on the theoretical aspects of physics,
+{\normalsize First Class degree concentrating on the theoretical aspects of physics,
 specifically to understand current research into particle physics and cosmology.
 This four year course involved specific modules in applied mathematics, statistics
 and computing dedicated to implementing algorithms for modelling and data analysis.}
@@ -137,65 +136,69 @@ and computing dedicated to implementing algorithms for modelling and data analys
 {}{A-levels: Physics (A), Mathematics (A), Chemistry (A), Further Mathematics (A). \\
 GCSEs: 3 A*, 3 A, 3 B.}
 
-\section{Skills}
-\cvitem{Key skills}{Physics, Data Analysis, Programming}
-\cvdoubleitem{Computing}{\cpp, \python, \fortran}{Frameworks}{ROOT, boost, gsl, numpy/scipy}
-\cvdoubleitem{OS}{Linux, Windows}{Tools}{SVN, Git, MS Office, \LaTeX, Vim}
-\cvdoubleitem{Languages}{English, German}{Additional}{Full, clean UK driving licence}
-%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
-%\cvitem{title}{\emph{Title}}
-%\cvitem{supervisors}{Supervisors}
-%\cvitem{description}{Short thesis abstract}
-
-\section{Professional Experience}
-\cventry{2013\\ to present}{Post doctoral researcher}{\tud}{Germany}{}{
-Post-doctoral position as an experimental researcher working on data from the \lhcb
-experiment. % in the Emmy N\"other group headed by Johannes Albrecht. \\
-My first project tested lepton universality, where I developed new models to describe the data,
-implemented the calculations in a coherent framework and brought the result to
-publication.
-Alongside this, I initiated a collaboration with the theory department to produce a prediction of the \kpi S-wave contribution to the \BdKstmm decay.
-%Currently extending previous measurements of \btosll decays and measuring \btodll decays. 
-\begin{itemize}%
-\item In the first twelve months delivered two high quality publications, one experimental measurement and one theoretical prediction.
-\item Subsequent placement at \cern for three months to contribute to the \lhcb trigger system.
-\item Supervised MSc and BSc students for their undergraduate projects as well as giving lectures and tutorials.
-\end{itemize}}
-%\cventry{year--year}{Job title}{Employer}{City}{}{Description line
-%1\newline{}Description line 2}
-\cventry{Jan 2012 -- Apr 2013}{PhD student}{\icl}{UK}{}{
-Published the second measurement of the angular distribution of \BdKstmm at \lhcb and 
-set up the first measurement of the \kpi S-wave contribution to the \BdKstmm decay.
+\section{Research Experience}
+%\cventry{2013-2015}{Post doctoral researcher}{\tud}{Germany}{}{
+\cvitem{}{Most recently, I have tested lepton universality using \BuKll decays.
+The measurement of \RK, the ratio of \BuKmm to \BuKee decays, was not expected to be possible at \lhcb.
+In October 2013, I took over this analysis as the project lead and developed new models to describe the data, 
+implemented the calculations in a coherent framework and brought the result to publication. 
+This measurement was published as an \textit{Editor’s highlight} in PRL in October 2014.
 }
-\cventry{Aug 2010 -- Dec 2011}{PhD student}{\cern}{Switzerland}{}{
-Placement as part of my PhD studentship, lived in Geneva and worked at CERN.
-Produced on the first measurement of the angular distribution of \BdKstmm at \lhcb, developed the trigger software for \lhcb and 
-participated in the running of the \lhcb experiment during data-taking in 2011.
+\cvitem{}{
+The related channel \BdKstmm is one to the top 3 measurements for \lhcb
+ and I worked on the first three publications of this decay as part of my PhD.
+We found several discrepancies with the standard model and these measurements 
+are an area of significant discussion in both the experimental and theoretical community.
+One factors which needs to be addressed for future measurements is the presence of a \kpi S-wave in the \Kstar system.
+During my PhD, I wrote one of the first papers to study this measurement and at Dortmund, 
+I then initiated a collaboration with theorists to predict the size of the \kpi S-wave.
 }
-
-\cventry{Summer\\ 2008}{Undergraduate research placement}{\icl}{UK}{}{Developed and
-integrated autonomous remote testing for the Ganga project.
-Added reporting options to show test failure differences between different versions. 
-\begin{itemize}
-\item Worked with established software framework as part of a small team to
-implement the required improvements.
-\end{itemize}
+\cvitem{}{
+The prospects of new physics in \RK and \BdKstmm led me to develop the electron triggers for Run II of the \lhc.
+Based on my experience developing the muon triggers for Run I, 
+I have ensured that there will be sufficient rate of electron decays for precision studies to test lepton non-universality.
+This required a good understand of the \lhcb software framework, both in C++ and Python, 
+and the ability to work in a rapidly changing environment.	
+}
+\cventry{Summer\\ 2008}{Undergraduate research placement}{\icl}{UK}{}{\normalsize 
+The Ganga project has developed front-end software that allows hundreds of researchers to use many distributed computing systems across the world in a coherent format and is the main user software for \lhcb and \atlas.
+Developed and integrated autonomous remote testing for the Ganga project and added reporting options to show test failure differences between different versions. 
+Worked with established Python framework as part of a small team of 10 developers to implement the remote testing.
 }
 
 \cventry{Summer \\2006 \& 2007}{Junior engineer}{Westinghouse Rail
-Systems}{Wiltshire, UK}{}{
+Systems}{Wiltshire, UK}{}{\normalsize 
 As a scholarship given to the best 3 students from local schools, 
 worked as the sole data analyst for the first live railway trial of a multi-million
 pound project.
 Invited back for a second year to develop software to test the integration of a 
 new railway track-side communications protocol.}
 
+\section*{Teaching Experience}
+\cvitem{ 2014 }{ English speaking tutorial group, $4^{\text{th}}$ year undergraduate particle physics, \tud.}
+\cvitem{ 2014 }{ Project supervision, $3^{\text{rd}}$ and $4^{\text{th}}$ year undergraduate course, \tud. }
+\cvitem{ 2014 }{ Particle identification seminar, part of the $4^{\text{th}}$ year particle detectors lecture course, \tud. }
+\cvitem{ 2012 }{ Computational lab demonstrator, $3^{\text{rd}}$ year undergradudate course, \icl. }
+\cvitem{ 2011 }{ Experimental lab demonstrator, $3^{\text{rd}}$ year undergraduate couse, \icl.}
+
+\section{Skills}
+\cvitem{Key skills}{Physics, Data Analysis, Programming}
+\cvdoubleitem{Computing}{\cpp, \python, \fortran}{Frameworks}{ROOT, boost, gsl, numpy/scipy}
+\cvdoubleitem{OS}{Linux, Windows}{Tools}{SVN, Git, MS Office, \LaTeX, Vim}
+\cvdoubleitem{Languages}{English, German}{Additional}{Full, clean UK driving licence}
+
+
 %\section{Languages}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line
+%1\newline{}Description line 2}
 %\cvitemwithcomment{Language 1}{Skill level}{Comment}
 %\cvitemwithcomment{Language 2}{Skill level}{Comment}
 %\cvitemwithcomment{Language 3}{Skill level}{Comment}
+\section{References}
+\cvitem{}{Available on request}
 
-%\clearpage
+
+\clearpage
 %
 %
 \section*{Publications}
@@ -206,41 +209,19 @@ new railway track-side communications protocol.}
 \publication{\bibentry{LHCb-PAPER-2011-020}}
 \cvitem{}{ Additional author on more than 200 papers as a member of the LHCb collaboration.}\vspace{-0.3cm}
 
+%\section*{Notes}
+
+
 \section*{Invited Talks} 
-%\publication{\bibentry{Shires:Heidelberg}}
-%\publication{\bibentry{Shires:DortmundTalk2}}
+\publication{\bibentry{Shires:Heidelberg}}
+\publication{\bibentry{Shires:DortmundTalk2}}
 \publication{\bibentry{Shires:CERNTalk}}
 \publication{\bibentry{Shires:AspenTalk}}
-%\publication{\bibentry{Shires:BonnTalk}}
-%\publication{\bibentry{Shires:DortmundTalk}}
-%\publication{\bibentry{Shires:1459485}}
-%\publication{\bibentry{ShiresIOP}}
-\cvitem{}{Additional regular seminars at UK and German institutions}.
+\publication{\bibentry{Shires:BonnTalk}}
+\publication{\bibentry{Shires:DortmundTalk}}
+\publication{\bibentry{Shires:1459485}}
+\publication{\bibentry{ShiresIOP}}
 
-%\section*{Teaching Experience}
-%\cvitem{ 2014 }{ English speaking tutorial group, $4^{\text{th}}$ particle physics, \tud.}
-%\cvitem{ 2014 }{ Project supervision, $3^{\text{rd}}$ and $4^{\text{th}}$ year undergraduate course, \tud. }
-%\cvitem{ 2014 }{ Particle identification seminar, part of the $4^{\text{th}}$ year particle detectors lecture course, \tud. }
-%\cvitem{ 2012 }{ Computational lab demonstrator, $3^{\text{rd}}$ year undergradudate course, \icl. }
-%\cvitem{ 2011 }{ Experimental lab demonstrator, $3^{\text{rd}}$ year undergraduate couse, \icl.}
-
-
-%\cvitem{hobby 3}{Description}
-%
-%\section{Extra 1}
-%\cvlistitem{Item 1}
-%\cvlistitem{Item 2}
-%\cvlistitem{Item 3. This item is particularly long and therefore normally spans
-%over several lines. Did you notice the indentation when the line wraps?}
-%
-%\section{Extra 2}
-%\cvlistdoubleitem{Item 1}{Item 4}
-%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before,
-%this item is particularly long to wrap over several lines.}
-
-\section{References}
-\cvitem{}{Available on request}
 %\begin{cvcolumns}
 % \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person
 % 3\end{itemize}}
@@ -258,16 +239,6 @@ new railway track-side communications protocol.}
 %\nocite{*}
 
 \nobibliography{cv,LHCb-PAPER} % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications} % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications} % 'publications' is the name of a BibTeX file
-
 %\clearpage
 %%-----       letter       ---------------------------------------------------------%% recipient data
 %\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
@@ -279,11 +250,4 @@ new railway track-side communications protocol.}
 %\makelettertitle
 %\dots
 %\makeletterclosing
-
-%\clearpage\end{CJK*} % if you are typesetting your resume in Chinese using CJK; the
-%\clearpage is required for fancyhdr to work correctly with CJK, though it kills the
-%page numbering by making \lastpage undefined
 \end{document}
-
-
-%% end of file `template.tex'.
