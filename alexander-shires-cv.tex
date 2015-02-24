@@ -3,7 +3,7 @@
 %'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{casual} % style options are 'casual' (default), 'classic', 'oldstyle'
+\moderncvstyle{banking} % style options are 'casual' (default), 'classic', 'oldstyle'
 %and 'banking'
 \moderncvcolor{blue} % color options 'blue' (default), 'orange', 'green', 'red',
 %'purple', 'grey' and 'black'
@@ -32,19 +32,19 @@
 %at your own typographical risks...
 
 % personal data
-\name{}{Dr Alexander Shires}
+\name{Dr Alexander}{Shires}
 %\title{Alexander Shires' Resume} % optional, remove / comment the line if not
 %wanted
 \address{Ostenhellweg 56}{44135 Dortmund}{Germany}% optional, remove / comment the
 %line if not wanted; the "postcode city" and "country" arguments can be omitted or
 %provided empty
-\phone[mobile]{+49~(173)~690~9175} % optional, remove / comment the line if not
+\phone[mobile]{+49~173~690~9175} % optional, remove / comment the line if not
 %wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\phone[fixed]{+44~(7799)~823~210}
+\phone[fixed]{+44~7799~823~210}
 %\phone[fax]{+3~(456)~789~012}
 \email{a.shires@gmail.com} % optional, remove / comment the line if not wanted
 %\homepage{www.johndoe.com} % optional, remove / comment the line if not wanted
-%\social[linkedin]{alex-shires} % optional, remove / comment the line if not wanted
+\social[linkedin]{alexshires} % optional, remove / comment the line if not wanted
 \social[twitter]{AlexanderShires} % optional, remove / comment the line if not
 \social[github]{alexshires} % optional, remove / comment the line if not wanted
 %\extrainfo{additional information} % optional, remove / comment the line if not
@@ -55,7 +55,7 @@
 %\quote{Some quote} % optional, remove / comment the line if not wanted
 %Publications
 %\newcommand{\publication}[3]{\cventry{#1}{#2}{}{}{}{#3}}
-\newcommand{\publication}[1]{\vspace{-0.3cm}\cvitem{}{#1}}
+\newcommand{\publication}[1]{\cvitem{}{#1}}
 
 \def\tud{Technische Universit\"at Dortmund\xspace}
 \def\icl{Imperial College London\xspace}
@@ -108,66 +108,57 @@
 \bibliographystyle{Alex}
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-\vspace{-1cm}
 
-A highly-motivated researcher, I have five years experience as a particle physicist at \cern whilst working at \icl and \tud.
-I am looking to apply my highly developed analytical and problem solving skills to business data and analytical software. \\
-
+A highly-motivated professional data scientist, I have five years experience as a researcher at \icl, \cern and \tud.
+I am looking to apply my analytical and problem solving skills to inform business decisions using advanced predictive analytics.
 
 \cvitem{Key Skills}{Data Science, Statistics, Data Analysis, Programming}
 
 \section{Employment history}
-\cventry{Jun 2013\\ to present}{Post-doctoral researcher}{\tud}{Germany}{}{
-\normalsize Research position in the experimental particle physics group, incorporating data analysis, software development and project management. \\
+\cventry{Jun 2013 to present}{Post-doctoral researcher}{\tud, Germany}{}{}{}
+\normalsize Research position in the experimental particle physics group, incorporating data analysis, software development and project management.  \\
 Delivered multiple high profile projects in collaboration with researchers located across Europe in a global, matrix environment.
 Independently reviewed a critical project at the request of senior management and delivered a thorough review ahead of schedule.
-As a convener of a research working group, I coordinate research projects internationally and am responsible for around thirty researchers, ranging from students to faculty members.
-Communication of my work is vital part of it’s success and I have strong public presentation skills, developed while leading discussions at a number of top academic institutions across Europe. \\
-Designed, implemented and maintained software, in Python and C++, at both user-level and for production systems 
-with hundreds of users. 
+As a convener of a research working group, I coordinate research projects internationally and am responsible for around thirty researchers, ranging from students to senior scientific mangement.
+Communication of my work is vital part of it’s success and I have strong public presentation skills, developed while leading discussions at a number of top academic institutions across Europe.  \\
+I have designed, implemented and maintained scientific software, in Python and C++, at both user-level and for production systems with hundreds of users. 
 The quality of the software is critical to record high value data and the output of this is used by the entire collaboration.
-Regularly implement effective code to deliver results with a scalable and maintainable ethos
-}
+Regularly implement effective code to deliver results with a scalable and maintainable ethos.
 
 \section{Skills}
-\cvdoubleitem{Computing}{C++, Python, Fortran}{Frameworks}{ROOT, boost, gsl,
-numpy/scipy}
-\cvdoubleitem{OS}{Linux, Windows}{Tools}{SVN, Git, MS Office, \LaTeX, Vim}
-\cvitem{Languages}{English (native), German (competent)}{}{}%{Other}{Full, clean UK driving licence}
-
+\cvitem{Computing}{Python, C++ (proficient), R, Fortran, SQL (basic)}
+\cvitem{Frameworks}{numpy/scipy, scikit-learn, Neurobayes, ROOT, boost, gsl}
+\cvitem{Languages}{English (native), German (conversational)}%{}{}%{Other}{Full, clean UK driving licence}
+\cvitem{OSs \& Tools}{Linux, Windows, SVN, Git, MS Office, \LaTeX, Vim}
 
 \section{Education}
-\cventry{Oct 2009 \\to Oct 2013}{PhD, High Energy Physics}{\icl}{UK}{}{\normalsize
-Thesis: \href{https://cds.cern.ch/record/1607078?ln=en}{\emph{Exploring $b\rightarrow s$
-electroweak penguins at LHCb}},
-Supervisor: \href{http://www3.imperial.ac.uk/people/u.egede}{Prof. Ulrik Egede} \\
+\cventry{Oct 2009 to Oct 2013}{PhD, High Energy Physics}{\icl, UK}{}{}{\normalsize  %Thesis: \href{https://cds.cern.ch/record/1607078?ln=en}{Thesis}.
+%\emph{Exploring $b\rightarrow s$ electroweak penguins at LHCb}, Supervisor: \href{http://www3.imperial.ac.uk/people/u.egede}{Prof. Ulrik Egede}.  \\
  Research PhD including an 18 month placement in Geneva to work at \cern.
 %Worked on understanding and analysing the first data taken at the \lhc.
-Delivered two projects that are the world's best measurements based on the first data coming out of the \lhc.
-Designed, implemented and maintained software critical for the accuracy and reliability of these results.
+I worked in a small team of researchers to deliver two projects based on the first data coming out of the \lhc. 
+These stand as the world's best measurements and have been presented widely at international conferences.
+I designed, implemented and maintained software critical for the accuracy and reliability of these results.
 } 
-\cventry{Oct 2005 \\to Jun 2009}{MSci (Hons), Physics With Theoretical Physics}{\icl}{UK}{}
+\cventry{Oct 2005 to Jun 2009}{MSci (Hons), Physics With Theoretical Physics}{\icl, UK}{}{}
 { \normalsize First Class degree concentrating on the theoretical aspects of physics,
 specifically to understand current research into particle physics and cosmology.
 This course involved specific modules in applied mathematics, statistics
 and computing dedicated to implementing algorithms for modelling and data analysis.
 % along with project-based business transferable skills courses.
 }
-\cventry{Aug 2005}{A-levels, GCSEs}{Hardenhuish School}{Wiltshire, UK}
-{}{\normalsize A-levels: Physics (A), Mathematics (A), Further Mathematics (A), Chemistry (A). \\
-GCSEs: 3 A*, 3 A, 3 B.}
-
-
+\cventry{Aug 2005}{A-levels, GCSEs}{Hardenhuish School, Wiltshire, UK}{}
+{}{\normalsize A-levels: Physics (A), Mathematics (A), Further Mathematics (A), Chemistry (A).  GCSEs: 3 A*, 3 A, 3 B.}
 
 \section{Previous experience}
-\cventry{Summer\\ 2008}{Undergraduate research placement}{\icl}{UK}{}{\normalsize 
+\cventry{Summer 2008}{Undergraduate research placement}{\icl, UK}{}{}{\normalsize 
 The Ganga project has developed front-end software that allows hundreds of researchers to use many distributed computing systems across the world in a coherent format.% and is the main user software for \lhcb and \atlas.
 Developed and integrated autonomous remote testing for the Ganga project and added reporting options to show test failure differences between different versions. 
 Worked with established Python framework as part of a small team of 10 developers to implement my changes.
 }
 
-\cventry{Summer \\2006 \& 2007}{Junior engineer}{Westinghouse Rail
-Systems}{Wiltshire, UK}{}{\normalsize
+\cventry{Summer 2006 \& 2007}{Junior engineer}{Westinghouse Rail
+Systems, Wiltshire, UK}{}{}{\normalsize
 As a scholarship given to the best 3 students from local schools, worked as the sole data analyst for the first live railway trial of a multi-million pound project.
 Invited back for a second year to develop software in C++ on Windows to test the integration of a new railway track-side communications protocol.}
 
@@ -177,22 +168,17 @@ When in London, I play regular amateur cricket with a team based in south west L
 
 %
 \section*{Publications}
-\publication{\bibentry{Das:2014sra}}
+\cvitem{}{Projects delivered as either lead analyst or with a significant contribution to the team.}
 \publication{\bibentry{LHCb-PAPER-2014-024}}
 \publication{\bibentry{LHCb-PAPER-2013-019}}
-\publication{\bibentry{Blake:2012mb}}
 \publication{\bibentry{LHCb-PAPER-2011-020}}
-\cvitem{}{ Additional author on more than 200 papers as a member of the \lhcb collaboration.}\vspace{-0.3cm}
+\publication{\bibentry{Das:2014sra}}
+\publication{\bibentry{Blake:2012mb}}
+\cvitem{}{Additional author on more than 200 papers as a member of the \lhcb collaboration.}
 
 \section*{Invited Talks} 
-%\publication{\bibentry{Shires:Heidelberg}}
-%\publication{\bibentry{Shires:DortmundTalk2}}
 \publication{\bibentry{Shires:CERNTalk}}
 \publication{\bibentry{Shires:AspenTalk}}
-%\publication{\bibentry{Shires:BonnTalk}}
-%\publication{\bibentry{Shires:DortmundTalk}}
-%\publication{\bibentry{Shires:1459485}}
-%\publication{\bibentry{ShiresIOP}}
 \cvitem{}{Additional regular seminars at UK and German institutions}.
 
 \section{References}
