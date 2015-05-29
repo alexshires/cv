@@ -21,7 +21,7 @@
 
 % adjust the page margins
 %\usepackage[scale=0.75]{geometry}
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.9]{geometry}
 \setlength{\hintscolumnwidth}{2cm}
 \AtBeginDocument{\recomputelengths}
 %\setlength{\hintscolumnwidth}{3cm} % if you want to change the width of the column
@@ -43,7 +43,7 @@
 \phone[fixed]{+44~7799~823~210}
 %\phone[fax]{+3~(456)~789~012}
 \email{a.shires@gmail.com} % optional, remove / comment the line if not wanted
-%\homepage{www.johndoe.com} % optional, remove / comment the line if not wanted
+\homepage{www.shires.me} % optional, remove / comment the line if not wanted
 \social[linkedin]{alexshires} % optional, remove / comment the line if not wanted
 \social[twitter]{AlexanderShires} % optional, remove / comment the line if not
 \social[github]{alexshires} % optional, remove / comment the line if not wanted
@@ -78,81 +78,83 @@
 \usepackage{amsfonts}
 \usepackage{upgreek} % Adds in support for greek letters in roman typeset
 \input{lhcb-symbols-def} % Add in the predefined LHCb symbols
-
-% to show numerical labels in the bibliography (default is to show no labels); only
-%useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE
-%ABOVE BY THIS
-%\usepackage{hyperref} % Hyperlinks in referencesor: Environment figure undefined.
-%\usepackage[all]{hypcap}
-% Uses hyperref to link DOI
-%\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
-%\newcommand\doi[1]{doi:\doilink{#1}}
+%\usepackage{natbib}
+%\usepackage{bibentry}
+%%\makeatletter\let\saved@bibitem\@bibitem\makeatother
 %\usepackage{cite}
-\usepackage{natbib}
-\usepackage{bibentry}
-%\makeatletter\let\saved@bibitem\@bibitem\makeatother
-\usepackage{cite}
-%\usepackage{mciteplus}
-\nobibliography*
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
+%\nobibliography*
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-\bibliographystyle{Alex}
+
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
+\vspace{-0.5cm}
+
 A highly-motivated professional data scientist, I have five years experience as a researcher at \icl, \cern and \tud.
-I am looking to apply my analytical and problem solving skills to inform business decisions using advanced predictive analytics.
+I am looking to apply my analytical and mathematical skills in quantitative roles to inform business decisions using advanced analytics. 
 
-\cvitem{Key Skills}{Data Science, Statistics, Data Analysis, Programming}
-
-\section{Employment history}
-\cventry{Jun 2013 to present}{Post-doctoral researcher}{\tud, Germany}{}{}{}
-\normalsize Research position in the experimental particle physics group, incorporating data analysis, software development and project management.  \\
-Delivered multiple high profile projects in collaboration with researchers located across Europe in a global, matrix environment.
-Independently reviewed a critical project at the request of senior management and delivered a thorough review ahead of schedule.
-As a convener of a research working group, I coordinate research projects internationally and am responsible for around thirty researchers, ranging from students to senior scientific mangement.
-Communication of my work is vital part of it’s success and I have strong public presentation skills, developed while leading discussions at a number of top academic institutions across Europe.  \\
-I have designed, implemented and maintained scientific software, in Python and C++, at both user-level and for production systems with hundreds of users. 
-The quality of the software is critical to record high value data and the output of this is used by the entire collaboration.
-Regularly implement effective code to deliver results with a scalable and maintainable ethos.
-
-\section{Skills}
-\cvitem{Computing}{Python, C++ (proficient), R, Fortran, SQL (basic)}
-\cvitem{Frameworks}{numpy/scipy, scikit-learn, Neurobayes, ROOT, boost, gsl}
-\cvitem{Languages}{English (native), German (conversational)}%{}{}%{Other}{Full, clean UK driving licence}
-\cvitem{OSs \& Tools}{Linux, Windows, SVN, Git, MS Office, \LaTeX, Vim}
+\cvitem{Key Skills}{Data Science, Statistics, Data Analytics, Programming}
 
 \section{Education}
-\cventry{Oct 2009 to Oct 2013}{PhD, High Energy Physics}{\icl, UK}{}{}{\normalsize  %Thesis: \href{https://cds.cern.ch/record/1607078?ln=en}{Thesis}.
-%\emph{Exploring $b\rightarrow s$ electroweak penguins at LHCb}, Supervisor: \href{http://www3.imperial.ac.uk/people/u.egede}{Prof. Ulrik Egede}.  \\
+\cventry{Oct 2009 to Oct 2013}{PhD, High Energy Physics}{\icl, UK}{}{}{\normalsize  
  Research PhD including an 18 month placement in Geneva to work at \cern.
-%Worked on understanding and analysing the first data taken at the \lhc.
-I worked in a small team of researchers to deliver two projects based on the first data coming out of the \lhc. 
-These stand as the world's best measurements and have been presented widely at international conferences.
-I designed, implemented and maintained software critical for the accuracy and reliability of these results.
+I worked in a small team of researchers to deliver five projects based on the first data coming out of the \lhc. 
+%These were the world's best measurements and have been widely presented internationally.
+%I designed, implemented and maintained software critical for the accuracy and reliability of these results.
 } 
-\cventry{Oct 2005 to Jun 2009}{MSci (Hons), Physics With Theoretical Physics}{\icl, UK}{}{}
+\cventry{Oct 2005 to Jun 2009}{MSci (First Class Hons), Physics With Theoretical Physics}{\icl, UK}{}{}
 { \normalsize First Class degree concentrating on the theoretical aspects of physics,
 specifically to understand current research into particle physics and cosmology.
 This course involved specific modules in applied mathematics, statistics
-and computing dedicated to implementing algorithms for modelling and data analysis.
-% along with project-based business transferable skills courses.
+and computing dedicated to implementing algorithms for modelling and data analysis.}
+%\cventry{Aug 2005}{A-levels, GCSEs}{Hardenhuish School, Wiltshire, UK}{}
+%{}{\normalsize A-levels: Physics (A), Mathematics (A), Further Mathematics (A), Chemistry (A).  GCSEs: 3 A*, 3 A, 3 B.}
+
+\section{Employment history}
+\cventry{Jun 2013 to present}{Post-doctoral researcher}{\tud, Germany}{}{}{}
+\normalsize Experimental particle physics research incorporating data analysis, software development and project coordination.
+%GENERIC
+\cvitem{}{\normalsize
+My research involved searching for new fundamental particles by measuring once-in-a-billion signals hidden in background noise. 
+To extract the data, I used in-memory and batch processing workflows to process datasets of trillions of items with sizes of several petabytes. 
+I analysed the data by applying machine learning algorithms to separate signal events from background noise as well as using visualisation software to explore the data. 
+As a result, I have discovered several new effects and written several scientific papers based on my results. 
+Additionally, I have designed, implemented and maintained scientific software in Python and C++ at both user-level and for production systems with hundreds of users.
+As part of an international collaboration, I have worked in small teams located remotely across the UK, Germany,
+France and Switzerland. I have managed small teams of researchers and I have coaching skills developed through the
+supervision of post-graduate students. Communication of my work is a vital part of it’s success and I have strong
+public presentation skills, developed while leading discussions at a number of top academic institutions across
+Europe. 
+As a convenor of a research working group, I was responsible for around thirty researchers, ranging from students to senior scientific management.  
 }
-\cventry{Aug 2005}{A-levels, GCSEs}{Hardenhuish School, Wiltshire, UK}{}
-{}{\normalsize A-levels: Physics (A), Mathematics (A), Further Mathematics (A), Chemistry (A).  GCSEs: 3 A*, 3 A, 3 B.}
+%QUANT (BEN CARTER)
+%\cvitem{}{\normalsize My work involved searching for new particles by measuring once-in-a-million signals hidden in background noise.
+%I extracted the signal using machine learning algorithms such as logistic regression, boosted decision trees and neural networks as well as utilising visualisation software for data exploration.
+%I constructed multi-dimensional models to extract the underlying parameters from the data and published the results in scientific papers.
+%%As part of an international collaboration, I have worked in small teams located remotely across the UK, Germany, France and Switzerland. 
+%I have managed small teams of researchers located remotely across Europe and I have strong public presentation skills, developed while leading discussions with key stakeholders at a number of top academic institutions.}
+\cvitem{}{\normalsize\textbf{Lead analyst}: \href{http://arxiv.org/abs/1406.6482}{\textit{arXiv:1406.6482}}. Our task was to test two rare signals, one of which had not been modelled before. As the project lead for a small team, I developed new models to describe the data, implemented all the calculations in a coherent framework and delivered the project. As a result, we achieved a 50\% increase in precision for the result and the paper is one of the highest profile results from the LHCb collaboration.}
+%\cvitem{}{\normalsize\textbf{Analyst}: \href{http://arxiv.org/abs/1210.5279}{\textit{arXiv:1210.5279}}. After discovering a possible bias inherent the data from the previous project, I showed that this would create a significant problem for future datasets. To solve this, I researched and developed a mathematical model sufficient to remove the bias and applied it to the data as a proof-of-concept result.}
+\cvitem{}{\normalsize\textbf{Analyst}: \href{http://arxiv.org/abs/1304.6325}{\textit{arXiv:1304.6325}}. As part of a small team working on one of the top three projects for the LHCb collaboration, I developed and maintained a correction algorithm to translate the recorded, distorted data into the true data. Measurements of the rare signal decay could indicate hidden effects and this algorithm was critical to ensure the accuracy of the final measurement. As a result, we were able to make the world's best measurement with the data available.}
+
+\section{Skills}
+\cvitem{Computing}{Python, C++ (proficient), Fortran (intermediate), R, Java (basic)}
+\cvitem{Frameworks}{numpy/scipy/pandas, scikit-learn, ROOT, boost, gsl} %Neurobayes
+\cvitem{Languages}{English (native), German (conversational)}
+\cvitem{OSs \& Tools}{Windows, Linux, Git, SVN, MS Office, \LaTeX, Vim, Tableau}
+\cvitem{Other}{Full, clean UK driving licence}
+
+
+%\section{Projects}
+\clearpage
+
 
 \section{Previous experience}
 \cventry{Summer 2008}{Undergraduate research placement}{\icl, UK}{}{}{\normalsize 
-The Ganga project has developed front-end software that allows hundreds of researchers to use many distributed computing systems across the world in a coherent format.% and is the main user software for \lhcb and \atlas.
+The Ganga project has developed front-end software that allows hundreds of researchers to use many distributed computing systems across the world in a coherent format.
 Developed and integrated autonomous remote testing for the Ganga project and added reporting options to show test failure differences between different versions. 
 Worked with established Python framework as part of a small team of 10 developers to implement my changes.
 }
@@ -163,48 +165,26 @@ As a scholarship given to the best 3 students from local schools, worked as the 
 Invited back for a second year to develop software in C++ on Windows to test the integration of a new railway track-side communications protocol.}
 
 \section{Interests}
-\cvitem{}{My main interests are music, cricket along with a passion for city breaks around Europe. I play the trombone to a high standard and have played in orchestra and jazz bands in London, Geneva and Dortmund.
-When in London, I play regular amateur cricket with a team based in south west London, including matches around south east England and tours abroad.}
-
-%
-\section*{Publications}
-\cvitem{}{Projects delivered as either lead analyst or with a significant contribution to the team.}
-\publication{\bibentry{LHCb-PAPER-2014-024}}
-\publication{\bibentry{LHCb-PAPER-2013-019}}
-\publication{\bibentry{LHCb-PAPER-2011-020}}
-\publication{\bibentry{Das:2014sra}}
-\publication{\bibentry{Blake:2012mb}}
-\cvitem{}{Additional author on more than 200 papers as a member of the \lhcb collaboration.}
-
-\section*{Invited Talks} 
-\publication{\bibentry{Shires:CERNTalk}}
-\publication{\bibentry{Shires:AspenTalk}}
-\cvitem{}{Additional regular seminars at UK and German institutions}.
+\cvitem{}{My main interests are music and cricket along with a passion for city breaks around Europe. 
+I play the trombone to a high standard and have played in orchestras and jazz bands in London, Geneva and Dortmund. 
+When in London, I play regular amateur cricket with a team based in south west London including matches around south east England and tours abroad.}
 
 \section{References}
 \cvitem{}{Available on request}
-%\begin{cvcolumns}
-% \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person
-% 3\end{itemize}}
-% \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item
-%Person 2\end{itemize}(more upon request)}
-% \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those}
-%also (all available upon request).}
-%\end{cvcolumns}
-
-\renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING
-
-\nobibliography{cv,LHCb-PAPER} % 'publications' is the name of a BibTeX file
-
+%
 %\clearpage
-%%-----       letter       ---------------------------------------------------------%% recipient data
-%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
-%\date{January 01, 1984}
-%\opening{Dear Sir or Madam,}
-%\closing{Yours faithfully,}
-%\enclosure[Attached]{curriculum vit\ae{}} % use an optional argument to use a
-%string other than "Enclosure", or redefine \enclname
-%\makelettertitle
-%\dots
-%\makeletterclosing
+%
+%\section{Professional experience}
+%\cvitem{}{As part of a small team, I lead the search to measure the difference between two rare particle decays. I joined the project and was asked to implement new models to distinguish the signal from the background noise. I researched and developed new models which increased the precision on the measurement from 25\% to under 10\% which enabled us to achieve our target goal for the project. Whilst located in Germany, I presented to key stakeholders in Geneva as well as working with and coaching a student in Bristol. As a result, we delivered the most precise calculation in the world and our result has opened up new avenues of research.}
+%
+%\cvitem{}{As project coordinator, I lead a small team to measure one of the rarest particle decays in the world. Our task was to update the previous measurement with three times more data as well as measure several new quantities. As the team was spread across three countries, I used a variety of different communication methods to ensure the team worked effectively. Additionally, I coached a student and provided them with frameworks and tools in order to enable us to meet internal deadlines. 
+%I used my networks to bring in additional expertise to enable us to add further value to the project and as a result, we surpassed our targets for the project.}
+%
+%\cvitem{}{I have worked as part of the software team to develop the data processing software for the LHCb experiment at CERN. This software is required to reduce the rate of input data from 1MHz to 300kHz whilst ensuring that all the signal events are kept and background noise is rejected. As this software is critical for data taking, I have tasked to measure the performance of the software twice, in preparation for data taking in 2011 and 2015. As a result, we have recorded enough quality data to the ensure the high value of LHCb’s physics program.}
+%
+%\cvitem{}{During my PhD, }
+
+%\nobibliography{cv,LHCb-PAPER,LHCb-CONF}
+
+
 \end{document}
